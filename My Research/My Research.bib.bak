@@ -1,0 +1,85 @@
+@Article{Jordan2022,
+  author     = {Jordan, Jeremy},
+  journal    = {arXiv preprint arXiv:2201.03898},
+  title      = {Introduction to autoencoders},
+  year       = {2022},
+  abstract   = {In this article, we will look at autoencoders. This article covers the mathematics and the fundamental concepts of autoencoders. We will discuss what they are, what the limitations are, the typical use cases, and we will look at some examples. We will start with a general introduction to autoencoders, and we will discuss the role of the activation function in the output layer and the loss function. We will then discuss what the reconstruction error is. Finally, we will look at typical applications as dimensionality reduction, classification, denoising, and anomaly detection. This paper contains the notes of a PhD-level lecture on autoencoders given in 2021.},
+  eprint     = {2201.03898},
+  file       = {:Jordan-2022-Introduction to autoencoders.pdf:PDF},
+  groups     = {Autoencoder, Machine Learning, Model},
+  priority   = {prio3},
+  ranking    = {rank2},
+  readstatus = {read},
+  refid      = {35},
+  shorttitle = {Introduction to autoencoders},
+}
+
+﻿
+@InProceedings{Andermatt2018,
+  code       = {https://github.com/zubata88/mdgru},
+  author     = {Andermatt, Simon and Pezold, Simon and Cattin, Philippe C.},
+  booktitle  = {Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries},
+  title      = {Automated Segmentation of Multiple Sclerosis Lesions Using Multi-dimensional Gated Recurrent Units},
+  year       = {2018},
+  address    = {Cham},
+  editor     = {Crimi, Alessandro and Bakas, Spyridon and Kuijf, Hugo and Menze, Bjoern and Reyes, Mauricio},
+  pages      = {31-42},
+  publisher  = {Springer International Publishing},
+  abstract   = {We analyze the performance of multi-dimensional gated recurrent units on automated lesion segmentation in multiple sclerosis. The segmentation of these pathologic structures is not trivial, since location, shape and size can be arbitrary. Furthermore, the inherent class imbalance of about 1 lesion voxel to 10 000 healthy voxels further exacerbates the correct segmentation. We introduce a new MD-GRU setup, using established techniques from the deep learning community as well as our own adaptations. We evaluate these modifications by comparing them to a standard MD-GRU network. We demonstrate that using data augmentation, selective sampling, residual learning and/or DropConnect on the RNN state can produce better segmentation results. Reaching rank #1 in the ISBI 2015 longitudinal multiple sclerosis lesion segmentation challenge, we show that a setup which combines these techniques can outperform the state of the art in automated lesion segmentation.},
+  eprint     = {1708.02766},
+  file       = {:Andermatt-2017-Multi-dimensional gated recurre.pdf:PDF},
+  groups     = {Gated Recurrent Unit, Model},
+  isbn       = {978-3-319-75238-9},
+  journal    = {arXiv preprint arXiv:1708.02766},
+  priority   = {prio2},
+  ranking    = {rank3},
+  readstatus = {read},
+  type       = {Conference Proceedings},
+}
+
+@InProceedings{Andermatt2018,
+  code       = {https://github.com/zubata88/mdgru},
+  author     = {Andermatt, Simon and Pezold, Simon and Cattin, Philippe C.},
+  booktitle  = {Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries},
+  title      = {Automated Segmentation of Multiple Sclerosis Lesions Using Multi-dimensional Gated Recurrent Units},
+  year       = {2018},
+  address    = {Cham},
+  editor     = {Crimi, Alessandro and Bakas, Spyridon and Kuijf, Hugo and Menze, Bjoern and Reyes, Mauricio},
+  pages      = {31-42},
+  publisher  = {Springer International Publishing},
+  abstract   = {We analyze the performance of multi-dimensional gated recurrent units on automated lesion segmentation in multiple sclerosis. The segmentation of these pathologic structures is not trivial, since location, shape and size can be arbitrary. Furthermore, the inherent class imbalance of about 1 lesion voxel to 10 000 healthy voxels further exacerbates the correct segmentation. We introduce a new MD-GRU setup, using established techniques from the deep learning community as well as our own adaptations. We evaluate these modifications by comparing them to a standard MD-GRU network. We demonstrate that using data augmentation, selective sampling, residual learning and/or DropConnect on the RNN state can produce better segmentation results. Reaching rank #1 in the ISBI 2015 longitudinal multiple sclerosis lesion segmentation challenge, we show that a setup which combines these techniques can outperform the state of the art in automated lesion segmentation.},
+  eprint     = {1708.02766},
+  file       = {:Andermatt-2017-Multi-dimensional gated recurre.pdf:PDF},
+  groups     = {Gated Recurrent Unit, Model},
+  isbn       = {978-3-319-75238-9},
+  journal    = {arXiv preprint arXiv:1708.02766},
+  priority   = {prio2},
+  ranking    = {rank3},
+  readstatus = {read},
+  type       = {Conference Proceedings},
+}
+
+﻿
+@Article{Zhao2020,
+  author   = {Zhao, Tong and Liu, Yozen and Neves, Leonardo and Woodford, Oliver and Jiang, Meng and Shah, Neil},
+  journal  = {arXiv preprint arXiv:2006.06830},
+  title    = {Data augmentation for graph neural networks},
+  year     = {2020},
+  code     = {https://github.com/zhao-tong/GAug},
+  abstract = {Data augmentation has been widely used to improve generalizability of machine learning models. However, comparatively little work studies data augmentation for graphs. This is largely due to the complex, non-Euclidean structure of graphs, which limits possible manipulation operations. Augmentation operations commonly used in vision and language have no analogs for graphs. Our work studies graph data augmentation for graph neural networks (GNNs) in the context of improving semi-supervised node-classification. We discuss practical and theoretical motivations, considerations and strategies for graph data augmentation. Our work shows that neural edge predictors can effectively encode class-homophilic structure to promote intra-class edges and demote inter-class edges in given graph structure, and our main contribution introduces the GAug graph data augmentation framework, which leverages these insights to improve performance in GNN-based node classification via edge prediction. Extensive experiments on multiple benchmarks show that augmentation via GAug improves performance across GNN architectures and datasets.},
+  eprint   = {2006.06830},
+  file     = {:Zhao-2020-Data augmentation for graph neural n.pdf:PDF},
+  groups   = {Graph Neural Network},
+  type     = {Journal Article},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Machine Learning\;2\;1\;0x8a8a8aff\;ROBOT\;Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. \;;
+2 StaticGroup:Model\;2\;1\;0x8a8a8aff\;TOY_BRICK\;A machine learning model is a file that has been trained to recognize certain types of patterns.\;;
+3 StaticGroup:Autoencoder\;0\;1\;0x8a8a8aff\;\;An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning).\;;
+3 StaticGroup:Gated Recurrent Unit\;0\;1\;0x8a8a8aff\;\;Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks.\;;
+3 StaticGroup:Graph Neural Network\;0\;1\;0x8a8a8aff\;\;A Graph neural network (GNN) is a class of artificial neural networks for processing data that can be represented as graphs.\;;
+}
