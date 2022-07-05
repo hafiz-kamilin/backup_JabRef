@@ -26,22 +26,21 @@
   pages      = {31-42},
   publisher  = {Springer International Publishing},
   abstract   = {We analyze the performance of multi-dimensional gated recurrent units on automated lesion segmentation in multiple sclerosis. The segmentation of these pathologic structures is not trivial, since location, shape and size can be arbitrary. Furthermore, the inherent class imbalance of about 1 lesion voxel to 10 000 healthy voxels further exacerbates the correct segmentation. We introduce a new MD-GRU setup, using established techniques from the deep learning community as well as our own adaptations. We evaluate these modifications by comparing them to a standard MD-GRU network. We demonstrate that using data augmentation, selective sampling, residual learning and/or DropConnect on the RNN state can produce better segmentation results. Reaching rank #1 in the ISBI 2015 longitudinal multiple sclerosis lesion segmentation challenge, we show that a setup which combines these techniques can outperform the state of the art in automated lesion segmentation.},
-  eprint     = {1708.02766},
-  file       = {:Andermatt-2017-Multi-dimensional gated recurre.pdf:PDF},
+  doi        = {https://doi.org/10.1007/978-3-319-75238-9_3},
+  file       = {:Andermatt-2018-Automated Segmentation of Multi.pdf:PDF},
   groups     = {Gated Recurrent Unit, Model, Classification},
   isbn       = {978-3-319-75238-9},
-  journal    = {arXiv preprint arXiv:1708.02766},
   priority   = {prio2},
   ranking    = {rank3},
   readstatus = {read},
   type       = {Conference Proceedings},
 }
 
-@Article{Andermatt2018,
+@Article{Andermatt2017,
   author     = {Andermatt, Simon and Pezold, Simon and Amann, Michael and Cattin, Philippe C.},
   journal    = {arXiv preprint arXiv:1708.02766},
   title      = {Multi-dimensional Gated Recurrent Units for Automated Anatomical Landmark Localization},
-  year       = {2018},
+  year       = {2017},
   code       = {https://github.com/zubata88/mdgru},
   abstract   = {We analyze the performance of multi-dimensional gated recurrent units on automated lesion segmentation in multiple sclerosis. The segmentation of these pathologic structures is not trivial, since location, shape and size can be arbitrary. Furthermore, the inherent class imbalance of about 1 lesion voxel to 10 000 healthy voxels further exacerbates the correct segmentation. We introduce a new MD-GRU setup, using established techniques from the deep learning community as well as our own adaptations. We evaluate these modifications by comparing them to a standard MD-GRU network. We demonstrate that using data augmentation, selective sampling, residual learning and/or DropConnect on the RNN state can produce better segmentation results. Reaching rank #1 in the ISBI 2015 longitudinal multiple sclerosis lesion segmentation challenge, we show that a setup which combines these techniques can outperform the state of the art in automated lesion segmentation.},
   eprint     = {1708.02766},
@@ -168,18 +167,32 @@
   type     = {Journal Article},
 }
 
+﻿
+@InProceedings{Wang,
+  code      = {https://github.com/xinntao/Real-ESRGAN},
+  author    = {Wang, Xintao and Xie, Liangbin and Dong, Chao and Shan, Ying},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  title     = {Real-esrgan: Training real-world blind super-resolution with pure synthetic data},
+  year      = {2021},
+  pages     = {1905-1914},
+  abstract  = {Though many attempts have been made in blind super-resolution to restore low-resolution images with unknown and complex degradations, they are still far from addressing general real-world degraded images. In this work, we extend the powerful ESRGAN to a practical restoration application (namely, Real-ESRGAN), which is trained with pure synthetic data. Specifically, a high-order degradation modeling process is introduced to better simulate complex real-world degradations. We also consider the common ringing and overshoot artifacts in the synthesis process. In addition, we employ a U-Net discriminator with spectral normalization to increase discriminator capability and stabilize the training dynamics. Extensive comparisons have shown its superior visual performance than prior works on various real datasets. We also provide efficient implementations to synthesize training pairs on the fly.},
+  groups    = {Generative adversarial networks},
+  type      = {Conference Proceedings},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
 1 StaticGroup:Machine Learning\;2\;1\;0x8a8a8aff\;ROBOT\;Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. \;;
-2 StaticGroup:Model\;2\;0\;0x8a8a8aff\;TOY_BRICK\;A machine learning model is a file that has been trained to recognize certain types of patterns.\;;
+2 StaticGroup:Model\;2\;1\;0x8a8a8aff\;TOY_BRICK\;A machine learning model is a file that has been trained to recognize certain types of patterns.\;;
 3 StaticGroup:Autoencoder\;0\;1\;0x8a8a8aff\;\;An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning).\;;
 3 StaticGroup:Gated Recurrent Unit\;0\;1\;0x8a8a8aff\;\;Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks.\;;
 3 StaticGroup:Graph Neural Network\;0\;1\;0x8a8a8aff\;\;A Graph neural network (GNN) is a class of artificial neural networks for processing data that can be represented as graphs.\;;
 3 StaticGroup:Natural Language Processing\;0\;1\;0x8a8a8aff\;\;Natural language processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data.\;;
 3 StaticGroup:Multi-Task Learning\;0\;1\;0x8a8a8aff\;\;Multi-task learning is a subfield of machine learning in which multiple learning tasks are solved at the same time, while exploiting commonalities and differences across tasks.\;;
-2 StaticGroup:Problem\;2\;0\;0x8a8a8aff\;HAMMER_SCREWDRIVER\;A real world problems and the solution that rely on machine learning.\;;
+3 StaticGroup:Generative adversarial networks\;0\;1\;0x8a8a8aff\;\;A generative adversarial network is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in June 2014. Two neural networks contest with each other in a game. Given a training set, this technique learns to generate new data with the same statistics as the training set.\;;
+2 StaticGroup:Problem\;2\;1\;0x8a8a8aff\;HAMMER_SCREWDRIVER\;A real world problems and the solution that rely on machine learning.\;;
 3 StaticGroup:Scheduling\;0\;1\;0x8a8a8aff\;\;Using machine learning to solve scheduling problem\;;
 3 StaticGroup:Translation\;0\;1\;0x8a8a8aff\;\;Using machine learning to translate language.\;;
 3 StaticGroup:Missing Data\;0\;1\;0x8a8a8aff\;\;Fill in the missing data in the dataset with machine learning.\;;
