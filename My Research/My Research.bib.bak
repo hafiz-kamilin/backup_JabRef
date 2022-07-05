@@ -168,15 +168,19 @@
 }
 
 ﻿
-@InProceedings{Wang,
-  code      = {https://github.com/xinntao/Real-ESRGAN},
+@InProceedings{Wang2021,
   author    = {Wang, Xintao and Xie, Liangbin and Dong, Chao and Shan, Ying},
   booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
   title     = {Real-esrgan: Training real-world blind super-resolution with pure synthetic data},
   year      = {2021},
+  code      = {https://github.com/xinntao/Real-ESRGAN},
   pages     = {1905-1914},
   abstract  = {Though many attempts have been made in blind super-resolution to restore low-resolution images with unknown and complex degradations, they are still far from addressing general real-world degraded images. In this work, we extend the powerful ESRGAN to a practical restoration application (namely, Real-ESRGAN), which is trained with pure synthetic data. Specifically, a high-order degradation modeling process is introduced to better simulate complex real-world degradations. We also consider the common ringing and overshoot artifacts in the synthesis process. In addition, we employ a U-Net discriminator with spectral normalization to increase discriminator capability and stabilize the training dynamics. Extensive comparisons have shown its superior visual performance than prior works on various real datasets. We also provide efficient implementations to synthesize training pairs on the fly.},
-  groups    = {Generative adversarial networks},
+  doi       = {10.1109/iccvw54120.2021.00217},
+  file      = {:Wang-2021-Real-esrgan_ Training real-world bli.pdf:PDF},
+  groups    = {Generative adversarial networks, Upscaling Image},
+  priority  = {prio2},
+  ranking   = {rank3},
   type      = {Conference Proceedings},
 }
 
@@ -198,5 +202,6 @@
 3 StaticGroup:Missing Data\;0\;1\;0x8a8a8aff\;\;Fill in the missing data in the dataset with machine learning.\;;
 3 StaticGroup:Internet of Things\;0\;0\;0x8a8a8aff\;\;Encompass all IoT related problems and the solutions with machine learning.\;;
 3 StaticGroup:Classification\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Upscaling Image\;0\;1\;0x8a8a8aff\;\;Upscaling image from low resolution to high resolution\;;
 2 StaticGroup:Miscellaneous\;0\;1\;0x8a8a8aff\;BOWL_MIX\;\;;
 }
