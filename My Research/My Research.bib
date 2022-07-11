@@ -6,7 +6,7 @@
   abstract   = {In this article, we will look at autoencoders. This article covers the mathematics and the fundamental concepts of autoencoders. We will discuss what they are, what the limitations are, the typical use cases, and we will look at some examples. We will start with a general introduction to autoencoders, and we will discuss the role of the activation function in the output layer and the loss function. We will then discuss what the reconstruction error is. Finally, we will look at typical applications as dimensionality reduction, classification, denoising, and anomaly detection. This paper contains the notes of a PhD-level lecture on autoencoders given in 2021.},
   eprint     = {2201.03898},
   file       = {:Jordan-2022-Introduction to autoencoders.pdf:PDF},
-  groups     = {Autoencoder, Machine Learning, Model},
+  groups     = {Autoencoder, Machine Learning, Model, Reconstruction},
   priority   = {prio3},
   ranking    = {rank2},
   readstatus = {read},
@@ -28,7 +28,7 @@
   abstract   = {We analyze the performance of multi-dimensional gated recurrent units on automated lesion segmentation in multiple sclerosis. The segmentation of these pathologic structures is not trivial, since location, shape and size can be arbitrary. Furthermore, the inherent class imbalance of about 1 lesion voxel to 10 000 healthy voxels further exacerbates the correct segmentation. We introduce a new MD-GRU setup, using established techniques from the deep learning community as well as our own adaptations. We evaluate these modifications by comparing them to a standard MD-GRU network. We demonstrate that using data augmentation, selective sampling, residual learning and/or DropConnect on the RNN state can produce better segmentation results. Reaching rank #1 in the ISBI 2015 longitudinal multiple sclerosis lesion segmentation challenge, we show that a setup which combines these techniques can outperform the state of the art in automated lesion segmentation.},
   doi        = {https://doi.org/10.1007/978-3-319-75238-9_3},
   file       = {:Andermatt-2018-Automated Segmentation of Multi.pdf:PDF},
-  groups     = {Gated Recurrent Unit, Model, Classification},
+  groups     = {Gated Recurrent Unit, Classification},
   isbn       = {978-3-319-75238-9},
   priority   = {prio2},
   ranking    = {rank3},
@@ -78,7 +78,7 @@
   abstract = {Hyperparameter (HP) tuning in deep learning is an expensive process, prohibitively so for neural networks (NNs) with billions of parameters. We show that, in the recently discovered Maximal Update Parametrization (muP), many optimal HPs remain stable even as model size changes. This leads to a new HP tuning paradigm we call muTransfer: parametrize the target model in muP, tune the HP indirectly on a smaller model, and zero-shot transfer them to the full-sized model, i.e., without directly tuning the latter at all. We verify muTransfer on Transformer and ResNet. For example, 1) by transferring pretraining HPs from a model of 13M parameters, we outperform published numbers of BERT-large (350M parameters), with a total tuning cost equivalent to pretraining BERT-large once; 2) by transferring from 40M parameters, we outperform published numbers of the 6.7B GPT-3 model, with tuning cost only 7% of total pretraining cost.},
   eprint   = {2203.03466},
   file     = {:Yang-2022-Tensor Programs V_ Tuning Large Neur.pdf:PDF},
-  groups   = {Natural Language Processing},
+  groups   = {Natural Language Processing, Tuning},
   priority = {prio3},
   ranking  = {rank1},
   type     = {Journal Article},
@@ -112,7 +112,7 @@
   abstract   = {Multi-task learning (MTL) has led to successes in many applications of machine learning, from natural language processing and speech recognition to computer vision and drug discovery. This article aims to give a general overview of MTL, particularly in deep neural networks. It introduces the two most common methods for MTL in Deep Learning, gives an overview of the literature, and discusses recent advances. In particular, it seeks to help ML practitioners apply MTL by shedding light on how MTL works and providing guidelines for choosing appropriate auxiliary tasks.},
   eprint     = {1706.05098},
   file       = {:Ruder-2017-An overview of multi-task learning.pdf:PDF},
-  groups     = {Multi-Task Learning},
+  groups     = {Multi-Task Learning, Classification},
   priority   = {prio2},
   ranking    = {rank4},
   readstatus = {read},
@@ -193,7 +193,7 @@
   abstract = {Wordle is an online word puzzle game that gained viral popularity in January 2022. The goal is to guess a hidden five letter word. After each guess, the player gains information about whether the letters they guessed are present in the word, and whether they are in the correct position. Numerous blogs have suggested guessing strategies and starting word lists that improve the chance of winning. Optimized algorithms can win 100% of games within five of the six allowed trials. However, it is infeasible for human players to use these algorithms due to an inability to perfectly recall all known 5-letter words and perform complex calculations that optimize information gain. Here, we present two different methods for choosing starting words along with a framework for discovering the optimal human strategy based on reinforcement learning. Human Wordle players can use the rules we discover to optimize their chance of winning.},
   eprint   = {2202.00557},
   file     = {:Anderson-2022-Finding the optimal human strate.pdf:PDF},
-  groups   = {Reinforcement Learning},
+  groups   = {Reinforcement Learning, Prediction},
   priority = {prio3},
   ranking  = {rank2},
   type     = {Journal Article},
@@ -246,9 +246,67 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
   month          = {11/26/2021},
   priority       = {prio3},
   publisher      = {Github},
+  ranking        = {rank2},
   readstatus     = {read},
   type           = {Sourcecode},
   url            = {https://github.com/bloc97/Anime4K},
+}
+
+﻿
+@InProceedings{Dong_AcceleratingtheSuperResolutionConvolutionalNeuralNetwork,
+  author    = {Dong, Chao and Loy, Chen Change and Tang, Xiaoou},
+  booktitle = {European conference on computer vision},
+  title     = {Accelerating the super-resolution convolutional neural network},
+  year      = {2016},
+  code      = {https://github.com/yjn870/FSRCNN-pytorch, https://github.com/Saafke/FSRCNN_Tensorflow},
+  pages     = {391-407},
+  publisher = {Springer},
+  abstract  = {As a successful deep model applied in image super-resolution (SR), the Super-Resolution Convolutional Neural Network (SRCNN) has demonstrated superior performance to the previous hand-crafted models either in speed and restoration quality. However, the high computational cost still hinders it from practical usage that demands real-time performance (24 fps). In this paper, we aim at accelerating the current SRCNN, and propose a compact hourglass-shape CNN structure for faster and better SR. We re-design the SRCNN structure mainly in three aspects. First, we introduce a deconvolution layer at the end of the network, then the mapping is learned directly from the original low-resolution image (without interpolation) to the high-resolution one. Second, we reformulate the mapping layer by shrinking the input feature dimension before mapping and expanding back afterwards. Third, we adopt smaller filter sizes but more mapping layers. The proposed model achieves a speed up of more than 40 times with even superior restoration quality. Further, we present the parameter settings that can achieve real-time performance on a generic CPU while still maintaining good performance. A corresponding transfer strategy is also proposed for fast training and testing across different upscaling factors.},
+  doi       = {10.1007/978-3-319-46475-6_25},
+  file      = {:Dong-2016-Accelerating the super-resolution co.pdf:PDF},
+  groups    = {Upscaler, Upscaling Image/Video},
+  priority  = {prio2},
+  ranking   = {rank3},
+  type      = {Conference Proceedings},
+}
+
+﻿
+@Article{Pan2021_IncoherentReconstructionFreeObjectRecognitionwithMaskBasedLenslessOpticsandtheTransformer,
+  author   = {Pan, Xiuxi and Chen, Xiao and Nakamura, Tomoya and Yamaguchi, Masahiro},
+  journal  = {Optics Express},
+  title    = {Incoherent reconstruction-free object recognition with mask-based lensless optics and the Transformer},
+  year     = {2021},
+  number   = {23},
+  pages    = {37962-37978},
+  volume   = {29},
+  abstract = {A mask-based lensless camera adopts a thin mask to optically encode the scene and records the encoded pattern on an image sensor. The lensless camera can be thinner, lighter and cheaper than the lensed camera. But additional computation is required to reconstruct an image from the encoded pattern. Considering that the significant application of the lensless camera could be inference, we propose to perform object recognition directly on the encoded pattern. Avoiding image reconstruction not only saves computational resources but also averts errors and artifacts in reconstruction. We theoretically analyze multiplexing property in mask-based lensless optics which maps local information in the scene to overlapping global information in the encoded pattern. To better extract global features, we propose a simplified Transformer-based architecture. This is the first time to study Transformer-based architecture for encoded pattern recognition in mask-based lensless optics. In the optical experiment, the proposed system achieves 91.47&#x0025; accuracy on the Fashion MNIST and 96.64&#x0025; ROC AUC on the cats-vs-dogs dataset. The feasibility of physical object recognition is also evaluated.},
+  doi      = {10.1364/OE.443181},
+  file     = {:Pan-2022-Image reconstruction with transformer.pdf:PDF},
+  groups   = {Convolutional Neural Network, Reconstruction},
+  keywords = {Feature extraction Image reconstruction Image sensors Optical sensing Pattern recognition Stochastic gradient descent},
+  priority = {prio2},
+  ranking  = {rank3},
+  type     = {Journal Article},
+  url      = {http://opg.optica.org/oe/abstract.cfm?URI=oe-29-23-37962},
+}
+
+@Article{Pan2022_ImageReconstructionwithTransformerforMaskBasedLenslessImaging,
+  author   = {Pan, Xiuxi and Chen, Xiao and Takeyama, Saori and Yamaguchi, Masahiro},
+  journal  = {Optics Letters},
+  title    = {Image reconstruction with transformer for mask-based lensless imaging},
+  year     = {2022},
+  number   = {7},
+  pages    = {1843-1846},
+  volume   = {47},
+  abstract = {A mask-based lensless camera optically encodes the scene with a thin mask and reconstructs the image afterward. The improvement of image reconstruction is one of the most important subjects in lensless imaging. Conventional model-based reconstruction approaches, which leverage knowledge of the physical system, are susceptible to imperfect system modeling. Reconstruction with a pure data-driven deep neural network (DNN) avoids this limitation, thereby having potential to provide a better reconstruction quality. However, existing pure DNN reconstruction approaches for lensless imaging do not provide a better result than model-based approaches. We reveal that the multiplexing property in lensless optics makes global features essential in understanding the optically encoded pattern. Additionally, all existing DNN reconstruction approaches apply fully convolutional networks (FCNs) which are not efficient in global feature reasoning. With this analysis, for the first time to the best of our knowledge, a fully connected neural network with a transformer for image reconstruction is proposed. The proposed architecture is better in global feature reasoning, and hence enhances the reconstruction. The superiority of the proposed architecture is verified by comparing with the model-based and FCN-based approaches in an optical experiment.},
+  doi      = {10.1364/OL.455378},
+  file     = {:Pan-2021-Incoherent reconstruction-free object.pdf:PDF},
+  groups   = {Convolutional Neural Network, Reconstruction},
+  keywords = {Fresnel zones Image quality Image reconstruction Image sensors Neural networks Reconstruction algorithms},
+  priority = {prio2},
+  ranking  = {rank3},
+  type     = {Journal Article},
+  url      = {http://opg.optica.org/ol/abstract.cfm?URI=ol-47-7-1843},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -266,14 +324,18 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
 3 StaticGroup:Reinforcement Learning\;0\;1\;0x8a8a8aff\;\;Reinforcement learning (RL) is an area of machine learning concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward.\;;
 3 StaticGroup:Artificial General Intelligence\;0\;1\;0x8a8a8aff\;\;Artificial general intelligence (AGI) is the ability of an intelligent agent to understand or learn any intellectual task that a human being can.\;;
 3 StaticGroup:Upscaler\;0\;1\;0x8a8a8aff\;\;AI upscaling predicts a high-resolution image that would downscale to look like the original, low-resolution image.\;;
+3 StaticGroup:Convolutional Neural Network\;0\;1\;0x8a8a8aff\;\;Convolutional neural network (CNN, or ConvNet) is a class of artificial neural network (ANN), most commonly applied to analyze visual imagery.\;;
 2 StaticGroup:Problem\;2\;1\;0x8a8a8aff\;HAMMER_SCREWDRIVER\;A real world problems and the solution that rely on machine learning.\;;
 3 StaticGroup:Scheduling\;0\;1\;0x8a8a8aff\;\;Using machine learning to solve scheduling problem\;;
 3 StaticGroup:Translation\;0\;1\;0x8a8a8aff\;\;Using machine learning to translate language.\;;
-3 StaticGroup:Missing Data\;0\;0\;0x8a8a8aff\;\;Fill in the missing data in the dataset with machine learning.\;;
+3 StaticGroup:Missing Data\;0\;1\;0x8a8a8aff\;\;Fill in the missing data in the dataset with machine learning.\;;
 3 StaticGroup:Internet of Things\;0\;1\;0x8a8a8aff\;\;Encompass all IoT related problems and the solutions with machine learning.\;;
 3 StaticGroup:Classification\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Upscaling Image/Video\;0\;1\;0x8a8a8aff\;\;Upscaling image from low resolution to high resolution\;;
+3 StaticGroup:Upscaling Image/Video\;0\;0\;0x8a8a8aff\;\;Upscaling image from low resolution to high resolution\;;
 3 StaticGroup:Internet Security\;0\;1\;0x8a8a8aff\;\;Using machine learning to enhance network security.\;;
+3 StaticGroup:Reconstruction\;0\;0\;0x8a8a8aff\;\;Reconstruct data with artificial intelligence.\;;
+3 StaticGroup:Prediction\;0\;1\;0x8a8a8aff\;\;Using machine learning to predict the future.\;;
+3 StaticGroup:Tuning\;0\;1\;0x8a8a8aff\;\;Method to tune machine learning training parameters.\;;
 2 StaticGroup:Miscellaneous\;0\;1\;0x8a8a8aff\;BOWL_MIX\;\;;
 }
 
