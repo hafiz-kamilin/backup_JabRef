@@ -6,7 +6,7 @@
   abstract   = {In this article, we will look at autoencoders. This article covers the mathematics and the fundamental concepts of autoencoders. We will discuss what they are, what the limitations are, the typical use cases, and we will look at some examples. We will start with a general introduction to autoencoders, and we will discuss the role of the activation function in the output layer and the loss function. We will then discuss what the reconstruction error is. Finally, we will look at typical applications as dimensionality reduction, classification, denoising, and anomaly detection. This paper contains the notes of a PhD-level lecture on autoencoders given in 2021.},
   eprint     = {2201.03898},
   file       = {:Jordan-2022-Introduction to autoencoders.pdf:PDF},
-  groups     = {Autoencoder, Machine Learning, Model, Reconstruction},
+  groups     = {Autoencoder, Machine Learning, Reconstruction},
   priority   = {prio3},
   ranking    = {rank2},
   readstatus = {read},
@@ -45,7 +45,7 @@
   abstract   = {We analyze the performance of multi-dimensional gated recurrent units on automated lesion segmentation in multiple sclerosis. The segmentation of these pathologic structures is not trivial, since location, shape and size can be arbitrary. Furthermore, the inherent class imbalance of about 1 lesion voxel to 10 000 healthy voxels further exacerbates the correct segmentation. We introduce a new MD-GRU setup, using established techniques from the deep learning community as well as our own adaptations. We evaluate these modifications by comparing them to a standard MD-GRU network. We demonstrate that using data augmentation, selective sampling, residual learning and/or DropConnect on the RNN state can produce better segmentation results. Reaching rank #1 in the ISBI 2015 longitudinal multiple sclerosis lesion segmentation challenge, we show that a setup which combines these techniques can outperform the state of the art in automated lesion segmentation.},
   eprint     = {1708.02766},
   file       = {:Andermatt-2017-Multi-dimensional gated recurre.pdf:PDF},
-  groups     = {Gated Recurrent Unit, Model, Classification},
+  groups     = {Gated Recurrent Unit, Classification},
   priority   = {prio2},
   ranking    = {rank3},
   readstatus = {read},
@@ -309,6 +309,44 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
   url      = {http://opg.optica.org/ol/abstract.cfm?URI=ol-47-7-1843},
 }
 
+﻿
+@Article{Makridakis2020_TheM4Competition100000TimeSeriesand61ForecastingMethods,
+  author   = {Makridakis, Spyros and Spiliotis, Evangelos and Assimakopoulos, Vassilios},
+  journal  = {International Journal of Forecasting},
+  title    = {The M4 Competition: 100,000 time series and 61 forecasting methods},
+  year     = {2020},
+  issn     = {0169-2070},
+  number   = {1},
+  pages    = {54-74},
+  volume   = {36},
+  abstract = {The M4 Competition follows on from the three previous M competitions, the purpose of which was to learn from empirical evidence both how to improve the forecasting accuracy and how such learning could be used to advance the theory and practice of forecasting. The aim of M4 was to replicate and extend the three previous competitions by: (a) significantly increasing the number of series, (b) expanding the number of forecasting methods, and (c) including prediction intervals in the evaluation process as well as point forecasts. This paper covers all aspects of M4 in detail, including its organization and running, the presentation of its results, the top-performing methods overall and by categories, its major findings and their implications, and the computational requirements of the various methods. Finally, it summarizes its main conclusions and states the expectation that its series will become a testing ground for the evaluation of new methods and the improvement of the practice of forecasting, while also suggesting some ways forward for the field.},
+  doi      = {https://doi.org/10.1016/j.ijforecast.2019.04.014},
+  file     = {:Makridakis-2020-The M4 Competition_ 100,000 ti.pdf:PDF},
+  groups   = {Prediction},
+  keywords = {Forecasting competitions M competitions Forecasting accuracy Prediction intervals Time series methods Machine learning methods Benchmarking methods Practice of forecasting},
+  priority = {prio1},
+  ranking  = {rank4},
+  type     = {Journal Article},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0169207019301128},
+}
+
+@Article{Makridakis2021_TheM5CompetitionBackgroundOrganizationandImplementation,
+  author   = {Makridakis, Spyros and Spiliotis, Evangelos and Assimakopoulos, Vassilios},
+  journal  = {International Journal of Forecasting},
+  title    = {The M5 competition: Background, organization, and implementation},
+  year     = {2021},
+  issn     = {01692070},
+  abstract = {The M5 competition follows the previous four M competitions, whose purpose is to learn from empirical evidence how to improve forecasting performance and advance the theory and practice of forecasting. M5 focused on a retail sales forecasting application with the objective to produce the most accurate point forecasts for 42,840 time series that represent the hierarchical unit sales of the largest retail company in the world, Walmart, as well as to provide the most accurate estimates of the uncertainty of these forecasts. Hence, the competition consisted of two parallel challenges, namely the Accuracy and Uncertainty forecasting competitions. M5 extended the results of the previous M competitions by: (a) significantly expanding the number of participating methods, especially those in the category of machine learning; (b) evaluating the performance of the uncertainty distribution along with point forecast accuracy; (c) including exogenous/explanatory variables in addition to the time series data; (d) using grouped, correlated time series; and (e) focusing on series that display intermittency. This paper describes the background, organization, and implementations of the competition, and it presents the data used and their characteristics. Consequently, it serves as introductory material to the results of the two forecasting challenges to facilitate their understanding.},
+  doi      = {10.1016/j.ijforecast.2021.07.007},
+  file     = {:Makridakis-2021-The M5 competition_ Background.pdf:PDF},
+  groups   = {Prediction},
+  keywords = {Forecasting competitions M competitions Accuracy Uncertainty Time series Retail sales forecasting},
+  priority = {prio1},
+  ranking  = {rank4},
+  type     = {Journal Article},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0169207021001187},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -325,7 +363,7 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
 3 StaticGroup:Artificial General Intelligence\;0\;1\;0x8a8a8aff\;\;Artificial general intelligence (AGI) is the ability of an intelligent agent to understand or learn any intellectual task that a human being can.\;;
 3 StaticGroup:Upscaler\;0\;1\;0x8a8a8aff\;\;AI upscaling predicts a high-resolution image that would downscale to look like the original, low-resolution image.\;;
 3 StaticGroup:Convolutional Neural Network\;0\;1\;0x8a8a8aff\;\;Convolutional neural network (CNN, or ConvNet) is a class of artificial neural network (ANN), most commonly applied to analyze visual imagery.\;;
-2 StaticGroup:Problem\;2\;1\;0x8a8a8aff\;HAMMER_SCREWDRIVER\;A real world problems and the solution that rely on machine learning.\;;
+2 StaticGroup:Problem\;2\;1\;0x8a8a8aff\;HAMMER_SCREWDRIVER\;A real world problems and the solution that rely or could be improve on with machine learning.\;;
 3 StaticGroup:Scheduling\;0\;1\;0x8a8a8aff\;\;Using machine learning to solve scheduling problem\;;
 3 StaticGroup:Translation\;0\;1\;0x8a8a8aff\;\;Using machine learning to translate language.\;;
 3 StaticGroup:Missing Data\;0\;1\;0x8a8a8aff\;\;Fill in the missing data in the dataset with machine learning.\;;

@@ -6,7 +6,7 @@
   abstract   = {In this article, we will look at autoencoders. This article covers the mathematics and the fundamental concepts of autoencoders. We will discuss what they are, what the limitations are, the typical use cases, and we will look at some examples. We will start with a general introduction to autoencoders, and we will discuss the role of the activation function in the output layer and the loss function. We will then discuss what the reconstruction error is. Finally, we will look at typical applications as dimensionality reduction, classification, denoising, and anomaly detection. This paper contains the notes of a PhD-level lecture on autoencoders given in 2021.},
   eprint     = {2201.03898},
   file       = {:Jordan-2022-Introduction to autoencoders.pdf:PDF},
-  groups     = {Autoencoder, Machine Learning, Model, Reconstruction},
+  groups     = {Autoencoder, Machine Learning, Reconstruction},
   priority   = {prio3},
   ranking    = {rank2},
   readstatus = {read},
@@ -28,7 +28,7 @@
   abstract   = {We analyze the performance of multi-dimensional gated recurrent units on automated lesion segmentation in multiple sclerosis. The segmentation of these pathologic structures is not trivial, since location, shape and size can be arbitrary. Furthermore, the inherent class imbalance of about 1 lesion voxel to 10 000 healthy voxels further exacerbates the correct segmentation. We introduce a new MD-GRU setup, using established techniques from the deep learning community as well as our own adaptations. We evaluate these modifications by comparing them to a standard MD-GRU network. We demonstrate that using data augmentation, selective sampling, residual learning and/or DropConnect on the RNN state can produce better segmentation results. Reaching rank #1 in the ISBI 2015 longitudinal multiple sclerosis lesion segmentation challenge, we show that a setup which combines these techniques can outperform the state of the art in automated lesion segmentation.},
   doi        = {https://doi.org/10.1007/978-3-319-75238-9_3},
   file       = {:Andermatt-2018-Automated Segmentation of Multi.pdf:PDF},
-  groups     = {Gated Recurrent Unit, Model, Classification},
+  groups     = {Gated Recurrent Unit, Classification},
   isbn       = {978-3-319-75238-9},
   priority   = {prio2},
   ranking    = {rank3},
@@ -45,7 +45,7 @@
   abstract   = {We analyze the performance of multi-dimensional gated recurrent units on automated lesion segmentation in multiple sclerosis. The segmentation of these pathologic structures is not trivial, since location, shape and size can be arbitrary. Furthermore, the inherent class imbalance of about 1 lesion voxel to 10 000 healthy voxels further exacerbates the correct segmentation. We introduce a new MD-GRU setup, using established techniques from the deep learning community as well as our own adaptations. We evaluate these modifications by comparing them to a standard MD-GRU network. We demonstrate that using data augmentation, selective sampling, residual learning and/or DropConnect on the RNN state can produce better segmentation results. Reaching rank #1 in the ISBI 2015 longitudinal multiple sclerosis lesion segmentation challenge, we show that a setup which combines these techniques can outperform the state of the art in automated lesion segmentation.},
   eprint     = {1708.02766},
   file       = {:Andermatt-2017-Multi-dimensional gated recurre.pdf:PDF},
-  groups     = {Gated Recurrent Unit, Model, Classification},
+  groups     = {Gated Recurrent Unit, Classification},
   priority   = {prio2},
   ranking    = {rank3},
   readstatus = {read},
@@ -309,15 +309,19 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
   url      = {http://opg.optica.org/ol/abstract.cfm?URI=ol-47-7-1843},
 }
 
-@Comment{jabref-meta: databaseType:bibtex;}
-
-@Comment{jabref-meta: grouping:
-0 AllEntriesGroup:;
-1 StaticGroup:Machine Learning\;2\;1\;0x8a8a8aff\;ROBOT\;Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. \;;
-2 StaticGroup:Model\;2\;1\;0x8a8a8aff\;TOY_BRICK\;A machine learning model is a file that has been trained to recognize certain types of patterns.\;;
-3 StaticGroup:Autoencoder\;0\;1\;0x8a8a8aff\;\;An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning).\;;
-3 StaticGroup:Gated Recurrent Unit\;0\;1\;0x8a8a8aff\;\;Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks.\;;
-3 StaticGroup:Graph Neural Network\;0\;1\;0x8a8a8aff\;\;A Graph neural network (GNN) is a class of artificial neural networks for processing data that can be represented as graphs.\;;
-3 StaticGroup:Natural Language Processing\;0\;1\;0x8a8a8aff\;\;Natural language processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data.\;;
-3 StaticGroup:Multi-Task Learning\;0\;1\;0x8a8a8aff\;\;Multi-task learning is a subfield of machine learning in which multiple learning tasks are solved at the same time, while exploiting commonalities and differences across tasks.\;;
-3 StaticGroup:Generative adversarial networks\;0\;1\;0x8a8a8aff\;\;A generative adversarial network is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in June 2014. Two neural networks contest with each other in a game. Given a tr
+﻿
+@Article{Makridakis2020_TheM4Competition100000TimeSeriesand61ForecastingMethods,
+  author   = {Makridakis, Spyros and Spiliotis, Evangelos and Assimakopoulos, Vassilios},
+  journal  = {International Journal of Forecasting},
+  title    = {The M4 Competition: 100,000 time series and 61 forecasting methods},
+  year     = {2020},
+  issn     = {0169-2070},
+  number   = {1},
+  pages    = {54-74},
+  volume   = {36},
+  abstract = {The M4 Competition follows on from the three previous M competitions, the purpose of which was to learn from empirical evidence both how to improve the forecasting accuracy and how such learning could be used to advance the theory and practice of forecasting. The aim of M4 was to replicate and extend the three previous competitions by: (a) significantly increasing the number of series, (b) expanding the number of forecasting methods, and (c) including prediction intervals in the evaluation process as well as point forecasts. This paper covers all aspects of M4 in detail, including its organization and running, the presentation of its results, the top-performing methods overall and by categories, its major findings and their implications, and the computational requirements of the various methods. Finally, it summarizes its main conclusions and states the expectation that its series will become a testing ground for the evaluation of new methods and the improvement of the practice of forecasting, while also suggesting some ways forward for the field.},
+  doi      = {https://doi.org/10.1016/j.ijforecast.2019.04.014},
+  file     = {:Makridakis-2020-The M4 Competition_ 100,000 ti.pdf:PDF},
+  groups   = {Prediction},
+  keywords = {Forecasting competitions M competitions Forecasting accuracy Prediction intervals Time series methods Machine learning methods Benchmarking methods Practice of forecasting},
+  priority = {p
