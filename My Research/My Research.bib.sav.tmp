@@ -97,7 +97,7 @@
   abstract   = {In this journal, we proposed a novel method of using multi-task learning to switch the scheduling algorithm. With multi-task learning to change the scheduling algorithm inside the scheduling framework, the scheduling framework can create a scheduler with the best task execution optimization under the computation deadline. With the changing number of tasks, the number of types of resources taken, and computation deadline, it is hard for a single scheduling algorithm to achieve the best scheduler optimization while avoiding the worst-case time complexity in a resource-constrained Internet of Things (IoT) system due to the trade-off in computation time and optimization in each scheduling algorithm. Furthermore, different hardware specifications affect the scheduler computation time differently, making it hard to rely on Big-O complexity as a reference. With multi-task learning to profile the scheduling algorithm behavior on the hardware used to compute the scheduler, we can identify the best scheduling algorithm. Our benchmark result shows that it can achieve an average of 93.68% of accuracy in meeting the computation deadline, along with 23.41% of average optimization. Based on the results, our method can improve the scheduling of the resource-constrained IoT system.},
   doi        = {10.3390/info12040150},
   file       = {:Bin Kamilin-2021-Multi-Task Learning-Based Tas.pdf:PDF},
-  groups     = {Multi-Task Learning, Scheduling, Internet of Things},
+  groups     = {Multi-Task Learning, Internet of Things, Scheduler},
   priority   = {prio1},
   ranking    = {rank5},
   readstatus = {read},
@@ -402,4 +402,4 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
   title    = {Vision GNN: An Image is Worth Graph of Nodes},
   year     = {2022},
   code     = {https://github.com/huawei-noah/Efficient-AI-Backbones https://gitee.com/mindspore/models},
-  abstract = {Network architecture plays a key role in the deep learning-based computer vision system. The widely-used convolutional neural network and transformer treat the image as a grid or sequence structure, which is not flexible to capture irregular and complex objects. In this paper, we propose to represent the image as a graph structure and introduce a new Vision GNN (ViG) architecture to extract graph-level fea
+  abstract = {Network architecture plays a key role in the deep learning-based computer vision system. The widely-used convolutional neural network and transformer treat the image as a grid or sequence structure, which is not flexible to capture irregular and complex objects. In this paper, we propose to represent the image as a graph structure and introduce a new Vision GNN (ViG) architecture to extract graph-level feat

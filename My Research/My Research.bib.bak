@@ -97,7 +97,7 @@
   abstract   = {In this journal, we proposed a novel method of using multi-task learning to switch the scheduling algorithm. With multi-task learning to change the scheduling algorithm inside the scheduling framework, the scheduling framework can create a scheduler with the best task execution optimization under the computation deadline. With the changing number of tasks, the number of types of resources taken, and computation deadline, it is hard for a single scheduling algorithm to achieve the best scheduler optimization while avoiding the worst-case time complexity in a resource-constrained Internet of Things (IoT) system due to the trade-off in computation time and optimization in each scheduling algorithm. Furthermore, different hardware specifications affect the scheduler computation time differently, making it hard to rely on Big-O complexity as a reference. With multi-task learning to profile the scheduling algorithm behavior on the hardware used to compute the scheduler, we can identify the best scheduling algorithm. Our benchmark result shows that it can achieve an average of 93.68% of accuracy in meeting the computation deadline, along with 23.41% of average optimization. Based on the results, our method can improve the scheduling of the resource-constrained IoT system.},
   doi        = {10.3390/info12040150},
   file       = {:Bin Kamilin-2021-Multi-Task Learning-Based Tas.pdf:PDF},
-  groups     = {Multi-Task Learning, Scheduling, Internet of Things},
+  groups     = {Multi-Task Learning, Internet of Things, Scheduler},
   priority   = {prio1},
   ranking    = {rank5},
   readstatus = {read},
@@ -214,7 +214,7 @@
   abstract = {This article proposes a white-hat worm launcher based on machine learning (ML) adaptable to large-scale IoT network for Botnet Defense System (BDS). BDS is a cyber-security system that uses white-hat worms to exterminate malicious botnets. White-hat worms defend an IoT system against malicious bots, the BDS decides the number of white-hat worms, but there is no discussion on the white-hat worms' deployment in IoT network. Therefore, the authors propose a machine-learning-based launcher to launch the white-hat worms effectively along with a divide and conquer algorithm to deploy the launcher to large-scale IoT networks. Then the authors modeled BDS and the launcher with agent-oriented Petri net and confirmed the effect through the simulation of the PN2 model. The result showed that the proposed launcher can reduce the number of infected devices by about 30-40%.},
   doi      = {10.4018/ijssci.291713},
   file     = {:Pan-2022-Machine-Learning-Based White-Hat Worm.pdf:PDF},
-  groups   = {Multi-Task Learning, Internet Security},
+  groups   = {Multi-Task Learning, Internet Security, Deep Learning},
   priority = {prio1},
   ranking  = {rank5},
   type     = {Journal Article},
@@ -405,9 +405,23 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
   abstract = {Network architecture plays a key role in the deep learning-based computer vision system. The widely-used convolutional neural network and transformer treat the image as a grid or sequence structure, which is not flexible to capture irregular and complex objects. In this paper, we propose to represent the image as a graph structure and introduce a new Vision GNN (ViG) architecture to extract graph-level feature for visual tasks. We first split the image to a number of patches which are viewed as nodes, and construct a graph by connecting the nearest neighbors. Based on the graph representation of images, we build our ViG model to transform and exchange information among all the nodes. ViG consists of two basic modules: Grapher module with graph convolution for aggregating and updating graph information, and FFN module with two linear layers for node feature transformation. Both isotropic and pyramid architectures of ViG are built with different model sizes. Extensive experiments on image recognition and object detection tasks demonstrate the superiority of our ViG architecture. We hope this pioneering study of GNN on general visual tasks will provide useful inspiration and experience for future research.},
   eprint   = {2206.00272},
   file     = {:Han2022_VisionGNNanImageIsWorthGraphofNodes - Vision GNN_ an Image Is Worth Graph of Nodes.pdf:PDF},
-  groups   = {Graph Neural Network},
+  groups   = {Graph Neural Network, Classification},
   priority = {prio2},
   ranking  = {rank3},
+}
+
+@Article{Laurencon_TheBigScienceCorpusa1.6TBCompositeMultilingualDataset,
+  author   = {Laurençon, Hugo and Saulnier, Lucile and Wang, Thomas and Akiki, Christopher and del Moral, Albert Villanova and Le Scao, Teven and Von Werra, Leandro and Mou, Chenghao and Ponferrada, Eduardo González and Nguyen, Huu},
+  journal  = {NeurIPS 2022 Track Datasets and Benchmarks Submission},
+  title    = {The BigScience Corpus A 1.6 TB Composite Multilingual Dataset},
+  year     = {2022},
+  code     = {https://huggingface.co/bigscience-catalogue-lm-data https://github.com/bigscience-workshop/data-preparation},
+  abstract = {As language models grow ever larger, the need for large-scale high-quality text datasets has never been more pressing, especially in multilingual settings. The BigScience workshop, a 1-year international and multidisciplinary initiative, was formed with the goal of researching and training large language models as a values-driven undertaking, putting issues of ethics, harm, and governance in the foreground. This paper documents the data creation and curation efforts undertaken by BigScience to assemble a 1.6TB dataset spanning 59 languages that was used to train the 176-billion-parameter BigScience LargeOpen-science Open-access Multilingual language model (BLOOM). We further release a large initial subset of the corpus and analyses thereof, and hope to empower further large-scale monolingual and multilingual modeling projects with both the data and the processing tools, as well as stimulate research into studying this large multilingual corpus.},
+  file     = {:the_bigscience_corpus_a_1_6tb_.pdf:PDF},
+  groups   = {Natural Language Processing, Translation},
+  priority = {prio2},
+  ranking  = {rank3},
+  url      = {https://openreview.net/forum?id=UoEw6KigkUn},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -415,32 +429,32 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
 1 StaticGroup:Machine Learning\;2\;1\;0x8a8a8aff\;ROBOT\;Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. \;;
-2 StaticGroup:Model\;2\;1\;0x8a8a8aff\;TOY_BRICK\;A machine learning model is a file that has been trained to recognize certain types of patterns.\;;
-3 StaticGroup:Autoencoder\;0\;1\;0x8a8a8aff\;\;An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning).\;;
-3 StaticGroup:Gated Recurrent Unit\;0\;1\;0x8a8a8aff\;\;Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks.\;;
-3 StaticGroup:Graph Neural Network\;0\;1\;0x8a8a8aff\;\;A Graph neural network (GNN) is a class of artificial neural networks for processing data that can be represented as graphs.\;;
-3 StaticGroup:Natural Language Processing\;0\;1\;0x8a8a8aff\;\;Natural language processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data.\;;
-3 StaticGroup:Multi-Task Learning\;0\;1\;0x8a8a8aff\;\;Multi-task learning is a subfield of machine learning in which multiple learning tasks are solved at the same time, while exploiting commonalities and differences across tasks.\;;
-3 StaticGroup:Reinforcement Learning\;0\;1\;0x8a8a8aff\;\;Reinforcement learning (RL) is an area of machine learning concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward.\;;
-3 StaticGroup:Artificial General Intelligence\;0\;1\;0x8a8a8aff\;\;Artificial general intelligence (AGI) is the ability of an intelligent agent to understand or learn any intellectual task that a human being can.\;;
-3 StaticGroup:Upscaler\;0\;1\;0x8a8a8aff\;\;AI upscaling predicts a high-resolution image that would downscale to look like the original, low-resolution image.\;;
-3 StaticGroup:Convolutional Neural Network\;0\;1\;0x8a8a8aff\;\;Convolutional neural network (CNN, or ConvNet) is a class of artificial neural network (ANN), most commonly applied to analyze visual imagery.\;;
-3 StaticGroup:Generative adversarial networks\;0\;1\;0x8a8a8aff\;\;A generative adversarial network is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in June 2014. Two neural networks contest with each other in a game. Given a training set, this technique learns to generate new data with the same statistics as the training set.\;;
-3 StaticGroup:Deep Learning\;0\;1\;0x8a8a8aff\;\;Deep learning (also known as deep structured learning) is part of a broader family of machine learning methods based on artificial neural networks with representation learning.\;;
-3 StaticGroup:Tansformer\;0\;1\;0x8a8a8aff\;\;A transformer is a deep learning model that adopts the mechanism of self-attention, differentially weighting the significance of each part of the input data.\;;
-2 StaticGroup:Problem\;2\;1\;0x8a8a8aff\;HAMMER_SCREWDRIVER\;A real world problems and the solution that rely or could be improve on with machine learning.\;;
-3 StaticGroup:Scheduling\;0\;1\;0x8a8a8aff\;\;Using machine learning to solve scheduling problem\;;
-3 StaticGroup:Translation\;0\;1\;0x8a8a8aff\;\;Using machine learning to translate language.\;;
-3 StaticGroup:Missing Data\;0\;1\;0x8a8a8aff\;\;Fill in the missing data in the dataset with machine learning.\;;
-3 StaticGroup:Internet of Things\;0\;1\;0x8a8a8aff\;\;Encompass all IoT related problems and the solutions with machine learning.\;;
-3 StaticGroup:Classification\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Upscaling Image/Video\;0\;0\;0x8a8a8aff\;\;Upscaling image from low resolution to high resolution\;;
-3 StaticGroup:Internet Security\;0\;1\;0x8a8a8aff\;\;Using machine learning to enhance network security.\;;
-3 StaticGroup:Reconstruction\;0\;0\;0x8a8a8aff\;\;Reconstruct data with artificial intelligence.\;;
-3 StaticGroup:Prediction\;0\;1\;0x8a8a8aff\;\;Using machine learning to predict the future.\;;
-3 StaticGroup:Generative\;0\;0\;0x8a8a8aff\;\;Using machine learning to generate data\;;
-2 StaticGroup:Tuning/Training/Optimizing\;0\;1\;0x8a8a8aff\;TUNE_VERTICAL\;Method to tune/train/optimize machine learning training parameters.\;;
 2 StaticGroup:Miscellaneous\;0\;1\;0x8a8a8aff\;BOWL_MIX\;\;;
+2 StaticGroup:Model\;2\;1\;0x8a8a8aff\;TOY_BRICK\;A machine learning model is a file that has been trained to recognize certain types of patterns.\;;
+3 StaticGroup:Artificial General Intelligence\;0\;1\;0x8a8a8aff\;\;Artificial general intelligence (AGI) is the ability of an intelligent agent to understand or learn any intellectual task that a human being can.\;;
+3 StaticGroup:Autoencoder\;0\;1\;0x8a8a8aff\;\;An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning).\;;
+3 StaticGroup:Convolutional Neural Network\;0\;1\;0x8a8a8aff\;\;Convolutional neural network (CNN, or ConvNet) is a class of artificial neural network (ANN), most commonly applied to analyze visual imagery.\;;
+3 StaticGroup:Deep Learning\;0\;1\;0x8a8a8aff\;\;Deep learning (also known as deep structured learning) is part of a broader family of machine learning methods based on artificial neural networks with representation learning.\;;
+3 StaticGroup:Gated Recurrent Unit\;0\;1\;0x8a8a8aff\;\;Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks.\;;
+3 StaticGroup:Generative adversarial networks\;0\;1\;0x8a8a8aff\;\;A generative adversarial network is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in June 2014. Two neural networks contest with each other in a game. Given a training set, this technique learns to generate new data with the same statistics as the training set.\;;
+3 StaticGroup:Graph Neural Network\;0\;1\;0x8a8a8aff\;\;A Graph neural network (GNN) is a class of artificial neural networks for processing data that can be represented as graphs.\;;
+3 StaticGroup:Multi-Task Learning\;0\;1\;0x8a8a8aff\;\;Multi-task learning is a subfield of machine learning in which multiple learning tasks are solved at the same time, while exploiting commonalities and differences across tasks.\;;
+3 StaticGroup:Natural Language Processing\;0\;1\;0x8a8a8aff\;\;Natural language processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data.\;;
+3 StaticGroup:Reinforcement Learning\;0\;1\;0x8a8a8aff\;\;Reinforcement learning (RL) is an area of machine learning concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward.\;;
+3 StaticGroup:Tansformer\;0\;1\;0x8a8a8aff\;\;A transformer is a deep learning model that adopts the mechanism of self-attention, differentially weighting the significance of each part of the input data.\;;
+3 StaticGroup:Upscaler\;0\;1\;0x8a8a8aff\;\;AI upscaling predicts a high-resolution image that would downscale to look like the original, low-resolution image.\;;
+2 StaticGroup:Problem\;2\;1\;0x8a8a8aff\;HAMMER_SCREWDRIVER\;A real world problems and the solution that rely or could be improve on with machine learning.\;;
+3 StaticGroup:Classification\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Generative\;0\;0\;0x8a8a8aff\;\;Using machine learning to generate data\;;
+3 StaticGroup:Internet of Things\;0\;1\;0x8a8a8aff\;\;Encompass all IoT related problems and the solutions with machine learning.\;;
+3 StaticGroup:Internet Security\;0\;1\;0x8a8a8aff\;\;Using machine learning to enhance network security.\;;
+3 StaticGroup:Missing Data\;0\;1\;0x8a8a8aff\;\;Fill in the missing data in the dataset with machine learning.\;;
+3 StaticGroup:Prediction\;0\;1\;0x8a8a8aff\;\;Using machine learning to predict the future.\;;
+3 StaticGroup:Reconstruction\;0\;0\;0x8a8a8aff\;\;Reconstruct data with artificial intelligence.\;;
+3 StaticGroup:Scheduler\;0\;1\;0x8a8a8aff\;\;Using machine learning to solve scheduling problem\;;
+3 StaticGroup:Translation\;0\;1\;0x8a8a8aff\;\;Using machine learning to translate language.\;;
+3 StaticGroup:Upscaling Image/Video\;0\;0\;0x8a8a8aff\;\;Upscaling image from low resolution to high resolution\;;
+2 StaticGroup:Tuning/Training/Optimizing\;0\;1\;0x8a8a8aff\;TUNE_VERTICAL\;Method to tune/train/optimize machine learning training parameters.\;;
 }
 
 @Comment{jabref-entrytype: sourcecode: req[author;title;year] opt[abstract;Lastupdatedate;Code]}
