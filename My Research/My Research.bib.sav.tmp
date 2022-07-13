@@ -225,9 +225,11 @@
   author   = {LeCun, Yann},
   title    = {A Path Towards Autonomous Machine Intelligence Version 0.9. 2, 2022-06-27},
   year     = {2022},
+  abstract = {How could machines learn as efficiently as humans and animals? How could machines learn to reason and plan? How could machines learn representations of percepts and action plans at multiple levels of abstraction, enabling them to reason, predict,
+and plan at multiple time horizons? This position paper proposes an architecture and training paradigms with which to construct autonomous intelligent agents. It combines concepts such as configurable predictive world model, behavior driven through intrinsic motivation, and hierarchical joint embedding architectures trained with self-supervised learning.},
   file     = {:LeCun-2022-a_path_towards_autonomous_mach.pdf:PDF},
   groups   = {Artificial General Intelligence},
-  priority = {prio1},
+  priority = {prio2},
   ranking  = {rank4},
   url      = {https://openreview.net/forum?id=BZ5a1r-kVsf},
 }
@@ -372,7 +374,7 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
   file     = {:GitHub - Nixtla_neuralforecast_ Scalable and.html:URL},
   groups   = {Deep Learning},
   month    = {2/28/2022},
-  priority = {prio1},
+  priority = {prio2},
   ranking  = {rank4},
   type     = {Sourcecode},
   url      = {https://nixtla.github.io/neuralforecast/},
@@ -402,4 +404,63 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
   title    = {Vision GNN: An Image is Worth Graph of Nodes},
   year     = {2022},
   code     = {https://github.com/huawei-noah/Efficient-AI-Backbones https://gitee.com/mindspore/models},
-  abstract = {Network architecture plays a key role in the deep learning-based computer vision system. The widely-used convolutional neural network and transformer treat the image as a grid or sequence structure, which is not flexible to capture irregular and complex objects. In this paper, we propose to represent the image as a graph structure and introduce a new Vision GNN (ViG) architecture to extract graph-level feat
+  abstract = {Network architecture plays a key role in the deep learning-based computer vision system. The widely-used convolutional neural network and transformer treat the image as a grid or sequence structure, which is not flexible to capture irregular and complex objects. In this paper, we propose to represent the image as a graph structure and introduce a new Vision GNN (ViG) architecture to extract graph-level feature for visual tasks. We first split the image to a number of patches which are viewed as nodes, and construct a graph by connecting the nearest neighbors. Based on the graph representation of images, we build our ViG model to transform and exchange information among all the nodes. ViG consists of two basic modules: Grapher module with graph convolution for aggregating and updating graph information, and FFN module with two linear layers for node feature transformation. Both isotropic and pyramid architectures of ViG are built with different model sizes. Extensive experiments on image recognition and object detection tasks demonstrate the superiority of our ViG architecture. We hope this pioneering study of GNN on general visual tasks will provide useful inspiration and experience for future research.},
+  eprint   = {2206.00272},
+  file     = {:Han2022_VisionGNNanImageIsWorthGraphofNodes - Vision GNN_ an Image Is Worth Graph of Nodes.pdf:PDF},
+  groups   = {Graph Neural Network, Classification},
+  priority = {prio2},
+  ranking  = {rank3},
+}
+
+@Article{Laurencon_TheBigScienceCorpusa1.6TBCompositeMultilingualDataset,
+  author   = {Laurençon, Hugo and Saulnier, Lucile and Wang, Thomas and Akiki, Christopher and del Moral, Albert Villanova and Le Scao, Teven and Von Werra, Leandro and Mou, Chenghao and Ponferrada, Eduardo González and Nguyen, Huu},
+  journal  = {NeurIPS 2022 Track Datasets and Benchmarks Submission},
+  title    = {The BigScience Corpus A 1.6 TB Composite Multilingual Dataset},
+  year     = {2022},
+  code     = {https://huggingface.co/bigscience-catalogue-lm-data https://github.com/bigscience-workshop/data-preparation},
+  abstract = {As language models grow ever larger, the need for large-scale high-quality text datasets has never been more pressing, especially in multilingual settings. The BigScience workshop, a 1-year international and multidisciplinary initiative, was formed with the goal of researching and training large language models as a values-driven undertaking, putting issues of ethics, harm, and governance in the foreground. This paper documents the data creation and curation efforts undertaken by BigScience to assemble a 1.6TB dataset spanning 59 languages that was used to train the 176-billion-parameter BigScience LargeOpen-science Open-access Multilingual language model (BLOOM). We further release a large initial subset of the corpus and analyses thereof, and hope to empower further large-scale monolingual and multilingual modeling projects with both the data and the processing tools, as well as stimulate research into studying this large multilingual corpus.},
+  file     = {:the_bigscience_corpus_a_1_6tb_.pdf:PDF},
+  groups   = {Natural Language Processing, Translation},
+  priority = {prio2},
+  ranking  = {rank3},
+  url      = {https://openreview.net/forum?id=UoEw6KigkUn},
+}
+
+@Webpage{Biswal2022_RecurrentNeuralNetworkRNNTutorialTypesandExamples,
+  accessdate = {13 July 2022},
+  author     = {Biswal, Avijeet},
+  publisher  = {Simplilearn},
+  title      = {Recurrent Neural Network (RNN) Tutorial: Types and Examples},
+  url        = {https://www.simplilearn.com/tutorials/deep-learning-tutorial/rnn},
+  year       = {2022},
+  series     = {Deep Learning Tutorial for Beginners},
+  abstract   = {The article explains what is a recurrent neural network, LSTM & types of RNN, why do we need a recurrent neural network, and its applications. Read on for more!},
+  file       = {:Recurrent Neural Network (RNN) Tutorial_ Types and Examples.html:URL},
+  groups     = {Recurrent Neural Network},
+  keywords   = {rnn, recurrent neural network, recurrent neural network tutorial, rnn tutorial, what is rnn, what is recurrent neural network, how does rnn work, lstm, recurrent neural network example, recurrent neural network tutorial,},
+  priority   = {prio2},
+  ranking    = {rank4},
+  readstatus = {read},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Machine Learning\;2\;1\;0x8a8a8aff\;ROBOT\;Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. \;;
+2 StaticGroup:Miscellaneous\;0\;1\;0x8a8a8aff\;BOWL_MIX\;\;;
+2 StaticGroup:Model\;2\;1\;0x8a8a8aff\;TOY_BRICK\;A machine learning model is a file that has been trained to recognize certain types of patterns.\;;
+3 StaticGroup:Artificial General Intelligence\;0\;1\;0x8a8a8aff\;\;Artificial general intelligence (AGI) is the ability of an intelligent agent to understand or learn any intellectual task that a human being can.\;;
+3 StaticGroup:Autoencoder\;0\;1\;0x8a8a8aff\;\;An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning).\;;
+3 StaticGroup:Convolutional Neural Network\;0\;1\;0x8a8a8aff\;\;Convolutional neural network (CNN, or ConvNet) is a class of artificial neural network (ANN), most commonly applied to analyze visual imagery.\;;
+3 StaticGroup:Deep Learning\;0\;1\;0x8a8a8aff\;\;Deep learning (also known as deep structured learning) is part of a broader family of machine learning methods based on artificial neural networks with representation learning.\;;
+3 StaticGroup:Generative adversarial networks\;0\;1\;0x8a8a8aff\;\;A generative adversarial network is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in June 2014. Two neural networks contest with each other in a game. Given a training set, this technique learns to generate new data with the same statistics as the training set.\;;
+3 StaticGroup:Graph Neural Network\;0\;1\;0x8a8a8aff\;\;A Graph neural network (GNN) is a class of artificial neural networks for processing data that can be represented as graphs.\;;
+3 StaticGroup:Multi-Task Learning\;0\;1\;0x8a8a8aff\;\;Multi-task learning is a subfield of machine learning in which multiple learning tasks are solved at the same time, while exploiting commonalities and differences across tasks.\;;
+3 StaticGroup:Natural Language Processing\;0\;1\;0x8a8a8aff\;\;Natural language processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data.\;;
+3 StaticGroup:Reinforcement Learning\;0\;1\;0x8a8a8aff\;\;Reinforcement learning (RL) is an area of machine learning concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward.\;;
+3 StaticGroup:Tansformer\;0\;1\;0x8a8a8aff\;\;A transformer is a deep learning model that adopts the mechanism of self-attention, differentially weighting the significance of each part of the input data.\;;
+3 StaticGroup:Upscaler\;0\;1\;0x8a8a8aff\;\;AI upscaling predicts a high-resolution image that would downscale to look like the original, low-resolution image.\;;
+3 StaticGroup:Recurrent Neural Network\;2\;1\;0x8a8a8aff\;\;A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes form a directed or undirected graph along a temporal sequence. \;;
+4 StaticGroup:Gated Recurrent Unit\;0\;1\;0x8a8a8aff\;\;Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks.\;;
+2 StaticGroup:Problem\;2\;1\;0x8a8a8aff\;HAMMER_SCREWDRIVER\;A real world problems and the solution that 
