@@ -437,10 +437,42 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
   abstract   = {The article explains what is a recurrent neural network, LSTM & types of RNN, why do we need a recurrent neural network, and its applications. Read on for more!},
   file       = {:Recurrent Neural Network (RNN) Tutorial_ Types and Examples.html:URL},
   groups     = {Recurrent Neural Network},
-  keywords   = {rnn, recurrent neural network, recurrent neural network tutorial, rnn tutorial, what is rnn, what is recurrent neural network, how does rnn work, lstm, recurrent neural network example, recurrent neural network tutorial,},
+  keywords   = {rnn, recurrent neural network, recurrent neural network tutorial, rnn tutorial, what is rnn, what is recurrent neural network, how does rnn work, lstm, recurrent neural network example},
   priority   = {prio2},
   ranking    = {rank4},
   readstatus = {read},
+}
+
+@Webpage{Phi2020_IllustratedGuidetoLSTM’sandGRU’saStepbyStepExplanation,
+  accessdate = {14 July 2022},
+  author     = {Phi, Michael},
+  publisher  = {Toward Data Science},
+  title      = {Illustrated Guide to LSTM’s and GRU’s: A step by step explanation},
+  url        = {https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21},
+  year       = {2020},
+  abstract   = {Hi and welcome to an Illustrated Guide to Long Short-Term Memory (LSTM) and Gated Recurrent Units (GRU). I’m Michael, and I’m a Machine Learning Engineer in the AI voice assistant space.
+
+In this post, we’ll start with the intuition behind LSTM ’s and GRU’s. Then I’ll explain the internal mechanisms that allow LSTM’s and GRU’s to perform so well. If you want to understand what’s happening under the hood for these two networks, then this post is for you.},
+  file       = {:Illustrated Guide to LSTM’s and GRU’s_ A step by step explanation.html:URL},
+  groups     = {Long short-term memory},
+  priority   = {prio2},
+  ranking    = {rank3},
+  readstatus = {skimmed},
+  shorttitle = {Illustrated Guide to LSTM’s and GRU’s: A step by step explanation},
+}
+
+@Webpage{Olah2015_UnderstandingLSTMNetworks,
+  accessdate = {14 July 2022},
+  author     = {Olah, Christopher},
+  title      = {Understanding LSTM Networks},
+  url        = {https://colah.github.io/posts/2015-08-Understanding-LSTMs/},
+  year       = {2015},
+  abstract   = {Humans don’t start their thinking from scratch every second. As you read this essay, you understand each word based on your understanding of previous words. You don’t throw everything away and start thinking from scratch again. Your thoughts have persistence.},
+  file       = {:Understanding LSTM Networks.html:URL},
+  groups     = {Long short-term memory},
+  priority   = {prio2},
+  ranking    = {rank3},
+  shorttitle = {Understanding LSTM Networks},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -454,13 +486,4 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
 3 StaticGroup:Autoencoder\;0\;1\;0x8a8a8aff\;\;An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning).\;;
 3 StaticGroup:Convolutional Neural Network\;0\;1\;0x8a8a8aff\;\;Convolutional neural network (CNN, or ConvNet) is a class of artificial neural network (ANN), most commonly applied to analyze visual imagery.\;;
 3 StaticGroup:Deep Learning\;0\;1\;0x8a8a8aff\;\;Deep learning (also known as deep structured learning) is part of a broader family of machine learning methods based on artificial neural networks with representation learning.\;;
-3 StaticGroup:Generative adversarial networks\;0\;1\;0x8a8a8aff\;\;A generative adversarial network is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in June 2014. Two neural networks contest with each other in a game. Given a training set, this technique learns to generate new data with the same statistics as the training set.\;;
-3 StaticGroup:Graph Neural Network\;0\;1\;0x8a8a8aff\;\;A Graph neural network (GNN) is a class of artificial neural networks for processing data that can be represented as graphs.\;;
-3 StaticGroup:Multi-Task Learning\;0\;1\;0x8a8a8aff\;\;Multi-task learning is a subfield of machine learning in which multiple learning tasks are solved at the same time, while exploiting commonalities and differences across tasks.\;;
-3 StaticGroup:Natural Language Processing\;0\;1\;0x8a8a8aff\;\;Natural language processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data.\;;
-3 StaticGroup:Reinforcement Learning\;0\;1\;0x8a8a8aff\;\;Reinforcement learning (RL) is an area of machine learning concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward.\;;
-3 StaticGroup:Tansformer\;0\;1\;0x8a8a8aff\;\;A transformer is a deep learning model that adopts the mechanism of self-attention, differentially weighting the significance of each part of the input data.\;;
-3 StaticGroup:Upscaler\;0\;1\;0x8a8a8aff\;\;AI upscaling predicts a high-resolution image that would downscale to look like the original, low-resolution image.\;;
-3 StaticGroup:Recurrent Neural Network\;2\;1\;0x8a8a8aff\;\;A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes form a directed or undirected graph along a temporal sequence. \;;
-4 StaticGroup:Gated Recurrent Unit\;0\;1\;0x8a8a8aff\;\;Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks.\;;
-2 StaticGroup:Problem\;2\;1\;0x8a8a8aff\;HAMMER_SCREWDRIVER\;A real world problems and the solution that 
+3 StaticGroup:Generative adversarial networks\;0\;1\;0x8a8a8aff\;\;A generative adversarial network is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in June 2014. Two neural networks contest with each other in a game. Given a training set, this technique learns to ge
