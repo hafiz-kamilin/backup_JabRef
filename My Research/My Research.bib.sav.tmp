@@ -475,15 +475,28 @@ In this post, we’ll start with the intuition behind LSTM ’s and GRU’s. The
   shorttitle = {Understanding LSTM Networks},
 }
 
+@Webpage{,
+  accessdate = {16 July 2022},
+  author     = {Haejin Lee, Susan},
+  publisher  = {Github},
+  title      = {Functional programming is finally going mainstream},
+  url        = {https://github.com/readme/featured/functional-programming},
+  year       = {2022},
+  date       = {12 July 2022},
+  abstract   = {Paul Louth had a great development team at Meddbase, the healthcare software company he founded in 2005. But as the company grew, so did their bug count. That’s expected, up to a point. More code and more features mean more defects. But the defect rate was growing faster than Louth expected.
+
+“We were seeing more and more of the same types of bugs,” Louth says. “It was clear that there was an issue, but it wasn’t clear what it was. My instinct told me the problem was complexity.”
+
+Louth and company used C#, which had just happened to add support for Language Integrated Query (LINQ), an alternate language for querying data sources ranging from databases to objects within codebases. LINQ introduced ways to apply the programming paradigm known as “functional programming” to C# code, and learning about how LINQ worked led him to learn more about functional programming in general.},
+  groups     = {Programming},
+  priority   = {prio3},
+  ranking    = {rank2},
+  readstatus = {read},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:Machine Learning\;2\;1\;0x8a8a8aff\;ROBOT\;Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. \;;
-2 StaticGroup:Miscellaneous\;0\;1\;0x8a8a8aff\;BOWL_MIX\;\;;
-2 StaticGroup:Model\;2\;1\;0x8a8a8aff\;TOY_BRICK\;A machine learning model is a file that has been trained to recognize certain types of patterns.\;;
-3 StaticGroup:Artificial General Intelligence\;0\;1\;0x8a8a8aff\;\;Artificial general intelligence (AGI) is the ability of an intelligent agent to understand or learn any intellectual task that a human being can.\;;
-3 StaticGroup:Autoencoder\;0\;1\;0x8a8a8aff\;\;An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning).\;;
-3 StaticGroup:Convolutional Neural Network\;0\;1\;0x8a8a8aff\;\;Convolutional neural network (CNN, or ConvNet) is a class of artificial neural network (ANN), most commonly applied to analyze visual imagery.\;;
-3 StaticGroup:Deep Learning\;0\;1\;0x8a8a8aff\;\;Deep learning (also known as deep structured learning) is part of a broader family of machine learning methods based on artificial neural networks with representation learning.\;;
-3 StaticGroup:Generative adversarial networks\;0\;1\;0x8a8a8aff\;\;A generative adversarial network is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in June 2014. Two neural networks contest with each other in a game. Given a training set, this technique learns to ge
+1 StaticGroup:Machine Learning\;2\;0\;0x8a8a8aff\;ROBOT\;Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. \;;
+2 StaticG

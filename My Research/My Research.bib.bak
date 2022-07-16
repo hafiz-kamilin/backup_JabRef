@@ -475,11 +475,21 @@ In this post, we’ll start with the intuition behind LSTM ’s and GRU’s. The
   shorttitle = {Understanding LSTM Networks},
 }
 
+@Webpage{,
+  accessdate = {16 July 2022},
+  author     = {Haejin Lee, Susan},
+  title      = {Functional programming is finally going mainstream},
+  url        = {https://github.com/readme/featured/functional-programming},
+  year       = {2022},
+  date       = {12 July 2022},
+  groups     = {Programming},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:Machine Learning\;2\;1\;0x8a8a8aff\;ROBOT\;Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. \;;
+1 StaticGroup:Machine Learning\;2\;0\;0x8a8a8aff\;ROBOT\;Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. \;;
 2 StaticGroup:Miscellaneous\;0\;1\;0x8a8a8aff\;BOWL_MIX\;\;;
 2 StaticGroup:Model\;2\;1\;0x8a8a8aff\;TOY_BRICK\;A machine learning model is a file that has been trained to recognize certain types of patterns.\;;
 3 StaticGroup:Artificial General Intelligence\;0\;1\;0x8a8a8aff\;\;Artificial general intelligence (AGI) is the ability of an intelligent agent to understand or learn any intellectual task that a human being can.\;;
@@ -508,8 +518,9 @@ In this post, we’ll start with the intuition behind LSTM ’s and GRU’s. The
 3 StaticGroup:Translation\;0\;1\;0x8a8a8aff\;\;Using machine learning to translate language.\;;
 3 StaticGroup:Upscaling Image/Video\;0\;0\;0x8a8a8aff\;\;Upscaling image from low resolution to high resolution\;;
 2 StaticGroup:Tuning/Training/Optimizing\;0\;1\;0x8a8a8aff\;TUNE_VERTICAL\;Method to tune/train/optimize machine learning training parameters.\;;
+1 StaticGroup:Programming\;0\;1\;0x8a8a8aff\;CODE_BRACES_BOX\;Computer programming is the process of performing a particular computation (or more generally, accomplishing a specific computing result).\;;
 }
 
 @Comment{jabref-entrytype: sourcecode: req[author;title;year] opt[abstract;Lastupdatedate;Code]}
 
-@Comment{jabref-entrytype: webpage: req[author;year;url;title;Accessdate;publisher] opt[series]}
+@Comment{jabref-entrytype: webpage: req[author;year;url;title;Accessdate;publisher] opt[series;date]}
