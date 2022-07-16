@@ -488,6 +488,7 @@ In this post, we’ll start with the intuition behind LSTM ’s and GRU’s. The
 “We were seeing more and more of the same types of bugs,” Louth says. “It was clear that there was an issue, but it wasn’t clear what it was. My instinct told me the problem was complexity.”
 
 Louth and company used C#, which had just happened to add support for Language Integrated Query (LINQ), an alternate language for querying data sources ranging from databases to objects within codebases. LINQ introduced ways to apply the programming paradigm known as “functional programming” to C# code, and learning about how LINQ worked led him to learn more about functional programming in general.},
+  file       = {:Functional programming is finally going mainstream.html:URL},
   groups     = {Programming},
   priority   = {prio3},
   ranking    = {rank2},
@@ -498,5 +499,4 @@ Louth and company used C#, which had just happened to add support for Language I
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:Machine Learning\;2\;0\;0x8a8a8aff\;ROBOT\;Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. \;;
-2 StaticG
+1 StaticGroup:Machine Learning\;2\;0\;0x8a8a8aff\;ROBOT\;Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, method
