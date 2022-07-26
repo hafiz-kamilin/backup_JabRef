@@ -6,7 +6,7 @@
   abstract   = {In this article, we will look at autoencoders. This article covers the mathematics and the fundamental concepts of autoencoders. We will discuss what they are, what the limitations are, the typical use cases, and we will look at some examples. We will start with a general introduction to autoencoders, and we will discuss the role of the activation function in the output layer and the loss function. We will then discuss what the reconstruction error is. Finally, we will look at typical applications as dimensionality reduction, classification, denoising, and anomaly detection. This paper contains the notes of a PhD-level lecture on autoencoders given in 2021.},
   eprint     = {2201.03898},
   file       = {:Jordan-2022-Introduction to autoencoders.pdf:PDF},
-  groups     = {Autoencoder, Machine Learning, Reconstruction},
+  groups     = {Autoencoder, Machine Learning},
   priority   = {prio3},
   ranking    = {rank2},
   readstatus = {read},
@@ -127,7 +127,7 @@
   code     = {https://deepmind.com/blog/article/Competitive-programming-with-AlphaCode},
   abstract = {Programming is a powerful and ubiquitous problem-solving tool. Developing systems that can assist programmers or even generate programs independently could make programming more productive and accessible, yet so far incorporating innovations in AI has proven challenging. Recent large-scale language models have demonstrated an impressive ability to generate code, and are now able to complete simple programming tasks. However, these models still perform poorly when evaluated on more complex, unseen problems that require problem-solving skills beyond simply translating instructions into code. For example, competitive programming problems which require an understanding of algorithms and complex natural language remain extremely challenging. To address this gap, we introduce AlphaCode, a system for code generation that can create novel solutions to these problems that require deeper reasoning. In simulated evaluations on recent programming competitions on the Codeforces platform, AlphaCode achieved on average a ranking of top 54.3% in competitions with more than 5,000 participants. We found that three key components were critical to achieve good and reliable performance: (1) an extensive and clean competitive programming dataset for training and evaluation, (2) large and efficient-to-sample transformer-based architectures, and (3) large-scale model sampling to explore the search space, followed by filtering based on program behavior to a small set of submissions.},
   file     = {:Yujia Li-2022-Competition-Level Code Generatio.pdf:PDF},
-  groups   = {Natural Language Processing, Translation},
+  groups   = {Natural Language Processing, Language},
   priority = {prio1},
   ranking  = {rank4},
   type     = {Journal Article},
@@ -214,7 +214,7 @@
   abstract = {This article proposes a white-hat worm launcher based on machine learning (ML) adaptable to large-scale IoT network for Botnet Defense System (BDS). BDS is a cyber-security system that uses white-hat worms to exterminate malicious botnets. White-hat worms defend an IoT system against malicious bots, the BDS decides the number of white-hat worms, but there is no discussion on the white-hat worms' deployment in IoT network. Therefore, the authors propose a machine-learning-based launcher to launch the white-hat worms effectively along with a divide and conquer algorithm to deploy the launcher to large-scale IoT networks. Then the authors modeled BDS and the launcher with agent-oriented Petri net and confirmed the effect through the simulation of the PN2 model. The result showed that the proposed launcher can reduce the number of infected devices by about 30-40%.},
   doi      = {10.4018/ijssci.291713},
   file     = {:Pan-2022-Machine-Learning-Based White-Hat Worm.pdf:PDF},
-  groups   = {Multi-Task Learning, Internet Security, Deep Learning},
+  groups   = {Multi-Task Learning, Internet Security, Deep Neural Network},
   priority = {prio1},
   ranking  = {rank5},
   type     = {Journal Article},
@@ -285,7 +285,7 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
   abstract = {A mask-based lensless camera adopts a thin mask to optically encode the scene and records the encoded pattern on an image sensor. The lensless camera can be thinner, lighter and cheaper than the lensed camera. But additional computation is required to reconstruct an image from the encoded pattern. Considering that the significant application of the lensless camera could be inference, we propose to perform object recognition directly on the encoded pattern. Avoiding image reconstruction not only saves computational resources but also averts errors and artifacts in reconstruction. We theoretically analyze multiplexing property in mask-based lensless optics which maps local information in the scene to overlapping global information in the encoded pattern. To better extract global features, we propose a simplified Transformer-based architecture. This is the first time to study Transformer-based architecture for encoded pattern recognition in mask-based lensless optics. In the optical experiment, the proposed system achieves 91.47&#x0025; accuracy on the Fashion MNIST and 96.64&#x0025; ROC AUC on the cats-vs-dogs dataset. The feasibility of physical object recognition is also evaluated.},
   doi      = {10.1364/OE.443181},
   file     = {:Pan-2022-Image reconstruction with transformer.pdf:PDF},
-  groups   = {Convolutional Neural Network, Reconstruction},
+  groups   = {Reconstruction},
   keywords = {Feature extraction Image reconstruction Image sensors Optical sensing Pattern recognition Stochastic gradient descent},
   priority = {prio2},
   ranking  = {rank3},
@@ -304,7 +304,7 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
   abstract = {A mask-based lensless camera optically encodes the scene with a thin mask and reconstructs the image afterward. The improvement of image reconstruction is one of the most important subjects in lensless imaging. Conventional model-based reconstruction approaches, which leverage knowledge of the physical system, are susceptible to imperfect system modeling. Reconstruction with a pure data-driven deep neural network (DNN) avoids this limitation, thereby having potential to provide a better reconstruction quality. However, existing pure DNN reconstruction approaches for lensless imaging do not provide a better result than model-based approaches. We reveal that the multiplexing property in lensless optics makes global features essential in understanding the optically encoded pattern. Additionally, all existing DNN reconstruction approaches apply fully convolutional networks (FCNs) which are not efficient in global feature reasoning. With this analysis, for the first time to the best of our knowledge, a fully connected neural network with a transformer for image reconstruction is proposed. The proposed architecture is better in global feature reasoning, and hence enhances the reconstruction. The superiority of the proposed architecture is verified by comparing with the model-based and FCN-based approaches in an optical experiment.},
   doi      = {10.1364/OL.455378},
   file     = {:Pan-2021-Incoherent reconstruction-free object.pdf:PDF},
-  groups   = {Convolutional Neural Network, Reconstruction},
+  groups   = {Reconstruction},
   keywords = {Fresnel zones Image quality Image reconstruction Image sensors Neural networks Reconstruction algorithms},
   priority = {prio2},
   ranking  = {rank3},
@@ -359,7 +359,7 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
   abstract = {Training a text-to-image generator in the general domain (e.g., Dall.e, CogView) requires huge amounts of paired text-image data, which is too expensive to collect. In this paper, we propose a self-supervised scheme named as CLIP-GEN for general text-to-image generation with the language-image priors extracted with a pre-trained CLIP model. In our approach, we only require a set of unlabeled images in the general domain to train a text-to-image generator. Specifically, given an image without text labels, we first extract the embedding of the image in the united language-vision embedding space with the image encoder of CLIP. Next, we convert the image into a sequence of discrete tokens in the VQGAN codebook space (the VQGAN model can be trained with the unlabeled image dataset in hand). Finally, we train an autoregressive transformer that maps the image tokens from its unified language-vision representation. Once trained, the transformer can generate coherent image tokens based on the text embedding extracted from the text encoder of CLIP upon an input text. Such a strategy enables us to train a strong and general text-to-image generator with large text-free image dataset such as ImageNet. Qualitative and quantitative evaluations verify that our method significantly outperforms optimization-based text-to-image methods in terms of image quality while not compromising the text-image matching. Our method can even achieve comparable performance as flagship supervised models like CogView.},
   eprint   = {2203.00386},
   file     = {:Wang-2022-CLIP-GEN_ Language-Free Training of.pdf:PDF},
-  groups   = {Generative adversarial networks, Generative},
+  groups   = {Generative adversarial networks, Generator},
   priority = {prio3},
   ranking  = {rank2},
   type     = {Journal Article},
@@ -372,7 +372,7 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
   year     = {2021},
   abstract = {NeuralForecast is a Python library for time series forecasting with deep learning models. It includes benchmark datasets, data-loading utilities, evaluation functions, statistical tests, univariate model benchmarks and SOTA models implemented in PyTorch and PyTorchLightning.},
   file     = {:GitHub - Nixtla_neuralforecast_ Scalable and.html:URL},
-  groups   = {Deep Learning},
+  groups   = {Deep Neural Network},
   month    = {2/28/2022},
   priority = {prio2},
   ranking  = {rank4},
@@ -420,7 +420,7 @@ The simplicity and speed of Anime4K allows the user to watch upscaled anime in r
   code     = {https://huggingface.co/bigscience-catalogue-lm-data https://github.com/bigscience-workshop/data-preparation},
   abstract = {As language models grow ever larger, the need for large-scale high-quality text datasets has never been more pressing, especially in multilingual settings. The BigScience workshop, a 1-year international and multidisciplinary initiative, was formed with the goal of researching and training large language models as a values-driven undertaking, putting issues of ethics, harm, and governance in the foreground. This paper documents the data creation and curation efforts undertaken by BigScience to assemble a 1.6TB dataset spanning 59 languages that was used to train the 176-billion-parameter BigScience LargeOpen-science Open-access Multilingual language model (BLOOM). We further release a large initial subset of the corpus and analyses thereof, and hope to empower further large-scale monolingual and multilingual modeling projects with both the data and the processing tools, as well as stimulate research into studying this large multilingual corpus.},
   file     = {:the_bigscience_corpus_a_1_6tb_.pdf:PDF},
-  groups   = {Natural Language Processing, Translation},
+  groups   = {Natural Language Processing, Language},
   priority = {prio2},
   ranking  = {rank3},
   url      = {https://openreview.net/forum?id=UoEw6KigkUn},
@@ -478,24 +478,278 @@ In this post, we’ll start with the intuition behind LSTM ’s and GRU’s. The
 @Webpage{,
   accessdate = {16 July 2022},
   author     = {Haejin Lee, Susan},
+  publisher  = {Github},
   title      = {Functional programming is finally going mainstream},
   url        = {https://github.com/readme/featured/functional-programming},
   year       = {2022},
   date       = {12 July 2022},
+  abstract   = {Paul Louth had a great development team at Meddbase, the healthcare software company he founded in 2005. But as the company grew, so did their bug count. That’s expected, up to a point. More code and more features mean more defects. But the defect rate was growing faster than Louth expected.
+
+“We were seeing more and more of the same types of bugs,” Louth says. “It was clear that there was an issue, but it wasn’t clear what it was. My instinct told me the problem was complexity.”
+
+Louth and company used C#, which had just happened to add support for Language Integrated Query (LINQ), an alternate language for querying data sources ranging from databases to objects within codebases. LINQ introduced ways to apply the programming paradigm known as “functional programming” to C# code, and learning about how LINQ worked led him to learn more about functional programming in general.},
+  file       = {:Functional programming is finally going mainstream.html:URL},
   groups     = {Programming},
+  priority   = {prio3},
+  ranking    = {rank2},
+  readstatus = {read},
+}
+
+@Webpage{Bronstein2022_TowardsGeometricDeepLearningIontheShouldersofGiants,
+  author     = {Bronstein, Michael},
+  publisher  = {Toward Data Science},
+  title      = {Towards Geometric Deep Learning I: On the Shoulders of Giants},
+  url        = {https://towardsdatascience.com/towards-geometric-deep-learning-i-on-the-shoulders-of-giants-726c205860f5},
+  year       = {2022},
+  abstract   = {Geometric Deep Learning approaches a broad class of ML problems from the perspectives of symmetry and invariance, providing a common blueprint for neural network architectures as diverse as CNNs, GNNs, and Transformers. In a new series of posts, we study how geometric ideas dating back to ancient Greece have shaped modern deep learning.},
+  file       = {:Towards Geometric Deep Learning I_ On the Shoulders of Giants.html:URL},
+  groups     = {Miscellaneous},
+  priority   = {prio2},
+  ranking    = {rank3},
+  readstatus = {read},
+  shorttitle = {Towards Geometric Deep Learning II: The Perceptron Affair},
+}
+
+@Webpage{Bronstein2022_TowardsGeometricDeepLearningIIthePerceptronAffaira,
+  author     = {Bronstein, Michael},
+  publisher  = {Toward Data Science},
+  title      = {Towards Geometric Deep Learning II: The Perceptron Affair},
+  url        = {https://towardsdatascience.com/towards-geometric-deep-learning-ii-the-perceptron-affair-fafa61b5c40a},
+  year       = {2022},
+  abstract   = {Geometric Deep Learning approaches a broad class of ML problems from the perspectives of symmetry and invariance, providing a common blueprint for neural network architectures as diverse as CNNs, GNNs, and Transformers. In a new series of posts, we study how these ideas have emerged through history from ancient Greek geometry to Graph Neural Networks.},
+  file       = {:Towards Geometric Deep Learning II_ The Perceptron Affair.html:URL},
+  groups     = {Miscellaneous},
+  priority   = {prio2},
+  ranking    = {rank3},
+  shorttitle = {Towards Geometric Deep Learning II: The Perceptron Affair},
+}
+
+@Webpage{Bronstein2022_GeometricFoundationsofDeepLearning,
+  author     = {Bronstein, Michael},
+  publisher  = {Toward Data Science},
+  title      = {Geometric foundations of Deep Learning},
+  url        = {https://towardsdatascience.com/geometric-foundations-of-deep-learning-94cdd45b451d},
+  year       = {2022},
+  abstract   = {Geometric Deep Learning is an attempt for geometric unification of a broad class of ML problems from the perspectives of symmetry and invariance. These principles not only underlie the breakthrough performance of convolutional neural networks and the recent success of graph neural networks but also provide a principled way to construct new types of problem-specific inductive biases.},
+  file       = {:Geometric foundations of Deep Learning.html:URL},
+  groups     = {Miscellaneous},
+  priority   = {prio2},
+  ranking    = {rank3},
+  shorttitle = {Geometric foundations of Deep Learning},
+}
+
+@Book{Atienza2020_AdvancedDeepLearningwithTensorFlow2andKerasApplyDLGANsVAEsDeepRLUnsupervisedLearningObjectDetectionandSegmentationandMore,
+  author     = {Atienza, Rowel},
+  publisher  = {Packt Publishing Ltd},
+  title      = {Advanced Deep Learning with TensorFlow 2 and Keras: Apply DL, GANs, VAEs, deep RL, unsupervised learning, object detection and segmentation, and more},
+  year       = {2020},
+  chapter    = {Chapter 3: Autoencoders},
+  edition    = {2},
+  abstract   = {Advanced Deep Learning with TensorFlow 2 and Keras, Second Edition is a completely updated edition of the bestselling guide to the advanced deep learning techniques available today. Revised for TensorFlow 2.x, this edition introduces you to the practical side of deep learning with new chapters on unsupervised learning using mutual information, object detection (SSD), and semantic segmentation (FCN and PSPNet), further allowing you to create your own cutting-edge AI projects.
+
+Using Keras as an open-source deep learning library, the book features hands-on projects that show you how to create more effective AI with the most up-to-date techniques.
+
+Starting with an overview of multi-layer perceptrons (MLPs), convolutional neural networks (CNNs), and recurrent neural networks (RNNs), the book then introduces more cutting-edge techniques as you explore deep neural network architectures, including ResNet and DenseNet, and how to create autoencoders. You will then learn about GANs, and how they can unlock new levels of AI performance.
+
+Next, you'll discover how a variational autoencoder (VAE) is implemented, and how GANs and VAEs have the generative power to synthesize data that can be extremely convincing to humans. You'll also learn to implement DRL such as Deep Q-Learning and Policy Gradient Methods, which are critical to many modern results in AI.},
+  file       = {:Atienza_Advanced Deep Learning with TensorFlow 2 and Keras.pdf:PDF},
+  groups     = {Autoencoder},
+  priority   = {prio1},
+  ranking    = {rank5},
+  readstatus = {skimmed},
+}
+
+@Book{Atienza2020_AdvancedDeepLearningwithTensorFlow2andKerasApplyDLGANsVAEsDeepRLUnsupervisedLearningObjectDetectionandSegmentationandMore,
+  author     = {Atienza, Rowel},
+  publisher  = {Packt Publishing Ltd},
+  title      = {Advanced Deep Learning with TensorFlow 2 and Keras: Apply DL, GANs, VAEs, deep RL, unsupervised learning, object detection and segmentation, and more},
+  year       = {2020},
+  chapter    = {Chapter 1: Introducing Advanced Deep Learning with Keras},
+  edition    = {2},
+  abstract   = {Advanced Deep Learning with TensorFlow 2 and Keras, Second Edition is a completely updated edition of the bestselling guide to the advanced deep learning techniques available today. Revised for TensorFlow 2.x, this edition introduces you to the practical side of deep learning with new chapters on unsupervised learning using mutual information, object detection (SSD), and semantic segmentation (FCN and PSPNet), further allowing you to create your own cutting-edge AI projects.
+
+Using Keras as an open-source deep learning library, the book features hands-on projects that show you how to create more effective AI with the most up-to-date techniques.
+
+Starting with an overview of multi-layer perceptrons (MLPs), convolutional neural networks (CNNs), and recurrent neural networks (RNNs), the book then introduces more cutting-edge techniques as you explore deep neural network architectures, including ResNet and DenseNet, and how to create autoencoders. You will then learn about GANs, and how they can unlock new levels of AI performance.
+
+Next, you'll discover how a variational autoencoder (VAE) is implemented, and how GANs and VAEs have the generative power to synthesize data that can be extremely convincing to humans. You'll also learn to implement DRL such as Deep Q-Learning and Policy Gradient Methods, which are critical to many modern results in AI.},
+  file       = {:Atienza_Advanced Deep Learning with TensorFlow 2 and Keras.pdf:PDF},
+  groups     = {Convolutional Neural Network},
+  priority   = {prio1},
+  ranking    = {rank5},
+  readstatus = {skimmed},
+}
+
+@Book{Atienza2020_AdvancedDeepLearningwithTensorFlow2andKerasApplyDLGANsVAEsDeepRLUnsupervisedLearningObjectDetectionandSegmentationandMorea,
+  author     = {Atienza, Rowel},
+  publisher  = {Packt Publishing Ltd},
+  title      = {Advanced Deep Learning with TensorFlow 2 and Keras: Apply DL, GANs, VAEs, deep RL, unsupervised learning, object detection and segmentation, and more},
+  year       = {2020},
+  chapter    = {Chapter 2: Deep Neural Networks},
+  edition    = {2},
+  abstract   = {Advanced Deep Learning with TensorFlow 2 and Keras, Second Edition is a completely updated edition of the bestselling guide to the advanced deep learning techniques available today. Revised for TensorFlow 2.x, this edition introduces you to the practical side of deep learning with new chapters on unsupervised learning using mutual information, object detection (SSD), and semantic segmentation (FCN and PSPNet), further allowing you to create your own cutting-edge AI projects.
+
+Using Keras as an open-source deep learning library, the book features hands-on projects that show you how to create more effective AI with the most up-to-date techniques.
+
+Starting with an overview of multi-layer perceptrons (MLPs), convolutional neural networks (CNNs), and recurrent neural networks (RNNs), the book then introduces more cutting-edge techniques as you explore deep neural network architectures, including ResNet and DenseNet, and how to create autoencoders. You will then learn about GANs, and how they can unlock new levels of AI performance.
+
+Next, you'll discover how a variational autoencoder (VAE) is implemented, and how GANs and VAEs have the generative power to synthesize data that can be extremely convincing to humans. You'll also learn to implement DRL such as Deep Q-Learning and Policy Gradient Methods, which are critical to many modern results in AI.},
+  file       = {:Atienza_Advanced Deep Learning with TensorFlow 2 and Keras.pdf:PDF},
+  groups     = {Deep Neural Network},
+  priority   = {prio1},
+  ranking    = {rank5},
+  readstatus = {skimmed},
+}
+
+@Book{Atienza2020_AdvancedDeepLearningwithTensorFlow2andKerasApplyDLGANsVAEsDeepRLUnsupervisedLearningObjectDetectionandSegmentationandMorea,
+  author     = {Atienza, Rowel},
+  publisher  = {Packt Publishing Ltd},
+  title      = {Advanced Deep Learning with TensorFlow 2 and Keras: Apply DL, GANs, VAEs, deep RL, unsupervised learning, object detection and segmentation, and more},
+  year       = {2020},
+  chapter    = {Chapter 4: Generative Adversarial Networks (GANs)},
+  edition    = {2},
+  abstract   = {Advanced Deep Learning with TensorFlow 2 and Keras, Second Edition is a completely updated edition of the bestselling guide to the advanced deep learning techniques available today. Revised for TensorFlow 2.x, this edition introduces you to the practical side of deep learning with new chapters on unsupervised learning using mutual information, object detection (SSD), and semantic segmentation (FCN and PSPNet), further allowing you to create your own cutting-edge AI projects.
+
+Using Keras as an open-source deep learning library, the book features hands-on projects that show you how to create more effective AI with the most up-to-date techniques.
+
+Starting with an overview of multi-layer perceptrons (MLPs), convolutional neural networks (CNNs), and recurrent neural networks (RNNs), the book then introduces more cutting-edge techniques as you explore deep neural network architectures, including ResNet and DenseNet, and how to create autoencoders. You will then learn about GANs, and how they can unlock new levels of AI performance.
+
+Next, you'll discover how a variational autoencoder (VAE) is implemented, and how GANs and VAEs have the generative power to synthesize data that can be extremely convincing to humans. You'll also learn to implement DRL such as Deep Q-Learning and Policy Gradient Methods, which are critical to many modern results in AI.},
+  file       = {:Atienza_Advanced Deep Learning with TensorFlow 2 and Keras.pdf:PDF},
+  groups     = {Generative adversarial networks},
+  priority   = {prio1},
+  ranking    = {rank5},
+  readstatus = {skimmed},
+}
+
+@Book{Atienza2020_AdvancedDeepLearningwithTensorFlow2andKerasApplyDLGANsVAEsDeepRLUnsupervisedLearningObjectDetectionandSegmentationandMoreb,
+  author     = {Atienza, Rowel},
+  publisher  = {Packt Publishing Ltd},
+  title      = {Advanced Deep Learning with TensorFlow 2 and Keras: Apply DL, GANs, VAEs, deep RL, unsupervised learning, object detection and segmentation, and more},
+  year       = {2020},
+  chapter    = {Chapter 5: Improved GANs},
+  edition    = {2},
+  abstract   = {Advanced Deep Learning with TensorFlow 2 and Keras, Second Edition is a completely updated edition of the bestselling guide to the advanced deep learning techniques available today. Revised for TensorFlow 2.x, this edition introduces you to the practical side of deep learning with new chapters on unsupervised learning using mutual information, object detection (SSD), and semantic segmentation (FCN and PSPNet), further allowing you to create your own cutting-edge AI projects.
+
+Using Keras as an open-source deep learning library, the book features hands-on projects that show you how to create more effective AI with the most up-to-date techniques.
+
+Starting with an overview of multi-layer perceptrons (MLPs), convolutional neural networks (CNNs), and recurrent neural networks (RNNs), the book then introduces more cutting-edge techniques as you explore deep neural network architectures, including ResNet and DenseNet, and how to create autoencoders. You will then learn about GANs, and how they can unlock new levels of AI performance.
+
+Next, you'll discover how a variational autoencoder (VAE) is implemented, and how GANs and VAEs have the generative power to synthesize data that can be extremely convincing to humans. You'll also learn to implement DRL such as Deep Q-Learning and Policy Gradient Methods, which are critical to many modern results in AI.},
+  file       = {:Atienza_Advanced Deep Learning with TensorFlow 2 and Keras.pdf:PDF},
+  groups     = {Generative adversarial networks},
+  priority   = {prio1},
+  ranking    = {rank5},
+  readstatus = {skimmed},
+}
+
+@Book{Atienza2020_AdvancedDeepLearningwithTensorFlow2andKerasApplyDLGANsVAEsDeepRLUnsupervisedLearningObjectDetectionandSegmentationandMorec,
+  author     = {Atienza, Rowel},
+  publisher  = {Packt Publishing Ltd},
+  title      = {Advanced Deep Learning with TensorFlow 2 and Keras: Apply DL, GANs, VAEs, deep RL, unsupervised learning, object detection and segmentation, and more},
+  year       = {2020},
+  chapter    = {Chapter 6: Disentangled Representation GANs},
+  edition    = {2},
+  abstract   = {Advanced Deep Learning with TensorFlow 2 and Keras, Second Edition is a completely updated edition of the bestselling guide to the advanced deep learning techniques available today. Revised for TensorFlow 2.x, this edition introduces you to the practical side of deep learning with new chapters on unsupervised learning using mutual information, object detection (SSD), and semantic segmentation (FCN and PSPNet), further allowing you to create your own cutting-edge AI projects.
+
+Using Keras as an open-source deep learning library, the book features hands-on projects that show you how to create more effective AI with the most up-to-date techniques.
+
+Starting with an overview of multi-layer perceptrons (MLPs), convolutional neural networks (CNNs), and recurrent neural networks (RNNs), the book then introduces more cutting-edge techniques as you explore deep neural network architectures, including ResNet and DenseNet, and how to create autoencoders. You will then learn about GANs, and how they can unlock new levels of AI performance.
+
+Next, you'll discover how a variational autoencoder (VAE) is implemented, and how GANs and VAEs have the generative power to synthesize data that can be extremely convincing to humans. You'll also learn to implement DRL such as Deep Q-Learning and Policy Gradient Methods, which are critical to many modern results in AI.},
+  file       = {:Atienza_Advanced Deep Learning with TensorFlow 2 and Keras.pdf:PDF},
+  groups     = {Generative adversarial networks},
+  priority   = {prio1},
+  ranking    = {rank5},
+  readstatus = {skimmed},
+}
+
+@Book{Atienza2020_AdvancedDeepLearningwithTensorFlow2andKerasApplyDLGANsVAEsDeepRLUnsupervisedLearningObjectDetectionandSegmentationandMored,
+  author     = {Atienza, Rowel},
+  publisher  = {Packt Publishing Ltd},
+  title      = {Advanced Deep Learning with TensorFlow 2 and Keras: Apply DL, GANs, VAEs, deep RL, unsupervised learning, object detection and segmentation, and more},
+  year       = {2020},
+  chapter    = {Chapter 8: Variational Autoencoders (VAEs)},
+  edition    = {2},
+  abstract   = {Advanced Deep Learning with TensorFlow 2 and Keras, Second Edition is a completely updated edition of the bestselling guide to the advanced deep learning techniques available today. Revised for TensorFlow 2.x, this edition introduces you to the practical side of deep learning with new chapters on unsupervised learning using mutual information, object detection (SSD), and semantic segmentation (FCN and PSPNet), further allowing you to create your own cutting-edge AI projects.
+
+Using Keras as an open-source deep learning library, the book features hands-on projects that show you how to create more effective AI with the most up-to-date techniques.
+
+Starting with an overview of multi-layer perceptrons (MLPs), convolutional neural networks (CNNs), and recurrent neural networks (RNNs), the book then introduces more cutting-edge techniques as you explore deep neural network architectures, including ResNet and DenseNet, and how to create autoencoders. You will then learn about GANs, and how they can unlock new levels of AI performance.
+
+Next, you'll discover how a variational autoencoder (VAE) is implemented, and how GANs and VAEs have the generative power to synthesize data that can be extremely convincing to humans. You'll also learn to implement DRL such as Deep Q-Learning and Policy Gradient Methods, which are critical to many modern results in AI.},
+  file       = {:Atienza_Advanced Deep Learning with TensorFlow 2 and Keras.pdf:PDF},
+  groups     = {Autoencoder},
+  priority   = {prio1},
+  ranking    = {rank5},
+  readstatus = {skimmed},
+}
+
+@Book{Atienza2020_AdvancedDeepLearningwithTensorFlow2andKerasApplyDLGANsVAEsDeepRLUnsupervisedLearningObjectDetectionandSegmentationandMored,
+  author     = {Atienza, Rowel},
+  publisher  = {Packt Publishing Ltd},
+  title      = {Advanced Deep Learning with TensorFlow 2 and Keras: Apply DL, GANs, VAEs, deep RL, unsupervised learning, object detection and segmentation, and more},
+  year       = {2020},
+  chapter    = {Chapter 7: Cross-Domain GANs},
+  edition    = {2},
+  abstract   = {Advanced Deep Learning with TensorFlow 2 and Keras, Second Edition is a completely updated edition of the bestselling guide to the advanced deep learning techniques available today. Revised for TensorFlow 2.x, this edition introduces you to the practical side of deep learning with new chapters on unsupervised learning using mutual information, object detection (SSD), and semantic segmentation (FCN and PSPNet), further allowing you to create your own cutting-edge AI projects.
+
+Using Keras as an open-source deep learning library, the book features hands-on projects that show you how to create more effective AI with the most up-to-date techniques.
+
+Starting with an overview of multi-layer perceptrons (MLPs), convolutional neural networks (CNNs), and recurrent neural networks (RNNs), the book then introduces more cutting-edge techniques as you explore deep neural network architectures, including ResNet and DenseNet, and how to create autoencoders. You will then learn about GANs, and how they can unlock new levels of AI performance.
+
+Next, you'll discover how a variational autoencoder (VAE) is implemented, and how GANs and VAEs have the generative power to synthesize data that can be extremely convincing to humans. You'll also learn to implement DRL such as Deep Q-Learning and Policy Gradient Methods, which are critical to many modern results in AI.},
+  file       = {:Atienza_Advanced Deep Learning with TensorFlow 2 and Keras.pdf:PDF},
+  groups     = {Generative adversarial networks},
+  priority   = {prio1},
+  ranking    = {rank5},
+  readstatus = {skimmed},
+}
+
+@Book{Atienza2020_AdvancedDeepLearningwithTensorFlow2andKerasApplyDLGANsVAEsDeepRLUnsupervisedLearningObjectDetectionandSegmentationandMoree,
+  author     = {Atienza, Rowel},
+  publisher  = {Packt Publishing Ltd},
+  title      = {Advanced Deep Learning with TensorFlow 2 and Keras: Apply DL, GANs, VAEs, deep RL, unsupervised learning, object detection and segmentation, and more},
+  year       = {2020},
+  chapter    = {Chapter 9: Deep Reinforcement Learning},
+  edition    = {2},
+  abstract   = {Advanced Deep Learning with TensorFlow 2 and Keras, Second Edition is a completely updated edition of the bestselling guide to the advanced deep learning techniques available today. Revised for TensorFlow 2.x, this edition introduces you to the practical side of deep learning with new chapters on unsupervised learning using mutual information, object detection (SSD), and semantic segmentation (FCN and PSPNet), further allowing you to create your own cutting-edge AI projects.
+
+Using Keras as an open-source deep learning library, the book features hands-on projects that show you how to create more effective AI with the most up-to-date techniques.
+
+Starting with an overview of multi-layer perceptrons (MLPs), convolutional neural networks (CNNs), and recurrent neural networks (RNNs), the book then introduces more cutting-edge techniques as you explore deep neural network architectures, including ResNet and DenseNet, and how to create autoencoders. You will then learn about GANs, and how they can unlock new levels of AI performance.
+
+Next, you'll discover how a variational autoencoder (VAE) is implemented, and how GANs and VAEs have the generative power to synthesize data that can be extremely convincing to humans. You'll also learn to implement DRL such as Deep Q-Learning and Policy Gradient Methods, which are critical to many modern results in AI.},
+  file       = {:Atienza_Advanced Deep Learning with TensorFlow 2 and Keras.pdf:PDF},
+  groups     = {Autoencoder, Deep Neural Network},
+  priority   = {prio1},
+  ranking    = {rank5},
+  readstatus = {skimmed},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:Machine Learning\;2\;0\;0x8a8a8aff\;ROBOT\;Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. \;;
+1 StaticGroup:Machine Learning\;2\;1\;0x8a8a8aff\;ROBOT\;Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. \;;
+2 StaticGroup:Application\;2\;0\;0x8a8a8aff\;APPLICATION\;Using machine learning to resolve real world problem.\;;
+3 StaticGroup:Classification\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Generator\;0\;1\;0x8a8a8aff\;\;Using machine learning to generate data\;;
+3 StaticGroup:Internet of Things\;0\;1\;0x8a8a8aff\;\;Encompass all IoT related problems and the solutions with machine learning.\;;
+3 StaticGroup:Internet Security\;0\;1\;0x8a8a8aff\;\;Using machine learning to enhance network security.\;;
+3 StaticGroup:Language\;0\;1\;0x8a8a8aff\;\;Using machine learning to translate language.\;;
+3 StaticGroup:Missing Data\;0\;1\;0x8a8a8aff\;\;Fill in the missing data in the dataset with machine learning.\;;
+3 StaticGroup:Prediction\;0\;1\;0x8a8a8aff\;\;Using machine learning to predict the future.\;;
+3 StaticGroup:Reconstruction\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Reconstruction\;0\;0\;0x8a8a8aff\;\;Reconstruct data with artificial intelligence.\;;
+3 StaticGroup:Scheduler\;0\;1\;0x8a8a8aff\;\;Using machine learning to solve scheduling problem\;;
+3 StaticGroup:Upscaling Image/Video\;0\;1\;0x8a8a8aff\;\;Upscaling image from low resolution to high resolution\;;
 2 StaticGroup:Miscellaneous\;0\;1\;0x8a8a8aff\;BOWL_MIX\;\;;
 2 StaticGroup:Model\;2\;1\;0x8a8a8aff\;TOY_BRICK\;A machine learning model is a file that has been trained to recognize certain types of patterns.\;;
 3 StaticGroup:Artificial General Intelligence\;0\;1\;0x8a8a8aff\;\;Artificial general intelligence (AGI) is the ability of an intelligent agent to understand or learn any intellectual task that a human being can.\;;
-3 StaticGroup:Autoencoder\;0\;1\;0x8a8a8aff\;\;An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning).\;;
+3 StaticGroup:Autoencoder\;0\;0\;0x8a8a8aff\;\;An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning).\;;
 3 StaticGroup:Convolutional Neural Network\;0\;1\;0x8a8a8aff\;\;Convolutional neural network (CNN, or ConvNet) is a class of artificial neural network (ANN), most commonly applied to analyze visual imagery.\;;
-3 StaticGroup:Deep Learning\;0\;1\;0x8a8a8aff\;\;Deep learning (also known as deep structured learning) is part of a broader family of machine learning methods based on artificial neural networks with representation learning.\;;
+3 StaticGroup:Deep Neural Network\;0\;1\;0x8a8a8aff\;\;Deep learning (also known as deep structured learning) is part of a broader family of machine learning methods based on artificial neural networks with representation learning.\;;
 3 StaticGroup:Generative adversarial networks\;0\;1\;0x8a8a8aff\;\;A generative adversarial network is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in June 2014. Two neural networks contest with each other in a game. Given a training set, this technique learns to generate new data with the same statistics as the training set.\;;
 3 StaticGroup:Graph Neural Network\;0\;1\;0x8a8a8aff\;\;A Graph neural network (GNN) is a class of artificial neural networks for processing data that can be represented as graphs.\;;
 3 StaticGroup:Multi-Task Learning\;0\;1\;0x8a8a8aff\;\;Multi-task learning is a subfield of machine learning in which multiple learning tasks are solved at the same time, while exploiting commonalities and differences across tasks.\;;
@@ -506,17 +760,6 @@ In this post, we’ll start with the intuition behind LSTM ’s and GRU’s. The
 3 StaticGroup:Reinforcement Learning\;0\;1\;0x8a8a8aff\;\;Reinforcement learning (RL) is an area of machine learning concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward.\;;
 3 StaticGroup:Tansformer\;0\;1\;0x8a8a8aff\;\;A transformer is a deep learning model that adopts the mechanism of self-attention, differentially weighting the significance of each part of the input data.\;;
 3 StaticGroup:Upscaler\;0\;1\;0x8a8a8aff\;\;AI upscaling predicts a high-resolution image that would downscale to look like the original, low-resolution image.\;;
-2 StaticGroup:Problem\;2\;1\;0x8a8a8aff\;HAMMER_SCREWDRIVER\;A real world problems and the solution that rely or could be improve on with machine learning.\;;
-3 StaticGroup:Classification\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Generative\;0\;0\;0x8a8a8aff\;\;Using machine learning to generate data\;;
-3 StaticGroup:Internet of Things\;0\;1\;0x8a8a8aff\;\;Encompass all IoT related problems and the solutions with machine learning.\;;
-3 StaticGroup:Internet Security\;0\;1\;0x8a8a8aff\;\;Using machine learning to enhance network security.\;;
-3 StaticGroup:Missing Data\;0\;1\;0x8a8a8aff\;\;Fill in the missing data in the dataset with machine learning.\;;
-3 StaticGroup:Prediction\;0\;1\;0x8a8a8aff\;\;Using machine learning to predict the future.\;;
-3 StaticGroup:Reconstruction\;0\;0\;0x8a8a8aff\;\;Reconstruct data with artificial intelligence.\;;
-3 StaticGroup:Scheduler\;0\;1\;0x8a8a8aff\;\;Using machine learning to solve scheduling problem\;;
-3 StaticGroup:Translation\;0\;1\;0x8a8a8aff\;\;Using machine learning to translate language.\;;
-3 StaticGroup:Upscaling Image/Video\;0\;0\;0x8a8a8aff\;\;Upscaling image from low resolution to high resolution\;;
 2 StaticGroup:Tuning/Training/Optimizing\;0\;1\;0x8a8a8aff\;TUNE_VERTICAL\;Method to tune/train/optimize machine learning training parameters.\;;
 1 StaticGroup:Programming\;0\;1\;0x8a8a8aff\;CODE_BRACES_BOX\;Computer programming is the process of performing a particular computation (or more generally, accomplishing a specific computing result).\;;
 }
